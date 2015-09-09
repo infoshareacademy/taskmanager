@@ -27,7 +27,21 @@
 </section>
 <section>
     <div>
-        Call to action
+        <p>Zostaw kontakt</p>
+        <form action="" method="post">
+            <label for="imie">Podaj imię</label><input id="imie" type="text" name="imie"><br>
+            <label for="nazwisko">Podaj nazwisko</label><input id="nazwisko" type="text" name="nazwisko"><br>
+            <label for="mail">Podaj email</label><input id="mail" type="email" name="adres_email"><br>
+            <label for="liczba_licencji">Wybierz liczbę licencji</label><br>
+            <select id="liczba_licencji">
+                <option value="1">1 licencja</option>
+                <option value="2">Więcej</option>
+            </select><br>
+            <p>Wybierz wersję językową</p>
+            <label for="pl"></label><input id="pl" type="radio" name="odpowiedz" value="tak">Wersja polska<br>
+            <label for="eng"></label><input id="eng" type="radio" name="odpowiedz" value="tak">Wersja angielska<br>
+            <input type="submit" value="wyślij">
+        </form>
     </div>
 </section>
 <footer>
