@@ -9,6 +9,7 @@
     <title>Pied Piper Task Manager</title>
     <link rel="shortcut icon" href="" type="" />
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -24,16 +25,53 @@
         <h1 style="color: white;" align="center">Tekst zajawki najlepszego Task Managera na świecie</h1>
     </div>
 </section>
+
 <section>
-    <div>
-        Opis funkcjonalności
+
+    <div class="center" id="funkcjonalności">
+
+        <h2>Poznaj funcjonalności !</h2>
+
+        <i class="fa fa-folder-o fa-5x"></i>
+        <h6>Foldery</h6>
+        <p>grupuj wszystkie listy w łatwo dostępnych folderach.</p>
+
+        <i class="fa fa-list-ul fa-5x"></i>
+
+        <h6>Listy</h6>
+        <p>Dodawaj swoje listy, abyś już nigdy o niczym nie zapomniał</p>
+
+        <i class="fa fa-sticky-note-o fa-5x"></i>
+        <h6>Notatki</h6>
+        <p>Dodawaj notatki do swoich zadań i bądź pewny, że nie zapomnisz o żadnym swoim pomyśle.</p>
+
+        <i class="fa fa-calendar-times-o fa-5x"></i>
+        <h6>Daty</h6>
+        <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
+
     </div>
 </section>
+
 <section>
     <div>
-        Call to action
+        <p>Zostaw kontakt</p>
+        <form action="" method="post">
+            <label for="imie">Podaj imię</label><input id="imie" type="text" name="imie"><br>
+            <label for="nazwisko">Podaj nazwisko</label><input id="nazwisko" type="text" name="nazwisko"><br>
+            <label for="mail">Podaj email</label><input id="mail" type="email" name="adres_email"><br>
+            <label for="liczba_licencji">Wybierz liczbę licencji</label><br>
+            <select id="liczba_licencji">
+                <option value="1">1 licencja</option>
+                <option value="2">Więcej</option>
+            </select><br>
+            <p>Wybierz wersję językową</p>
+            <label for="pl"></label><input id="pl" type="radio" name="odpowiedz" value="tak">Wersja polska<br>
+            <label for="eng"></label><input id="eng" type="radio" name="odpowiedz" value="tak">Wersja angielska<br>
+            <input type="submit" value="wyślij">
+        </form>
     </div>
 </section>
+
 <footer>
     <span>&copy;Pied Piper 2015</span>
 </footer>
