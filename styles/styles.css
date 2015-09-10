@@ -1,11 +1,44 @@
 
 #formularz{
-    margin: 15px 15px 15px 15px;
+    background-color: #007d00;
+    color: white;
+    position: fixed;
+    right: 0px;
+    top:100px;
+    margin: 20px;
+    padding-left:10px;
+    padding-right:5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: 180px;
 }
 
+#formularz p{
+    font-family: 'Montserrat', sans-serif;
+}
 
+#przycisk_wyslij{
+    color:white;
+    height:30px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
 
+#imie{
+    margin-top: 5px;
+}
 
+#nazwisko{
+    margin-top: 5px;
+}
 
+#mail{
+    margin-top: 5px;
+}
 
-007D00
+#liczba_licencji{
+    margin-top: 5px;
+}
+

@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="" type="" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -54,22 +55,22 @@
     </div>
 </section>
 
-<section>
-    <div id="formularz">
+<section id="formularz">
+    <div>
         <p>Zostaw kontakt</p>
         <form action="" method="post">
-            <label for="imie">Podaj imię</label><input id="imie" type="text" name="imie"><br>
-            <label for="nazwisko">Podaj nazwisko</label><input id="nazwisko" type="text" name="nazwisko"><br>
-            <label for="mail">Podaj email</label><input id="mail" type="email" name="adres_email"><br>
-            <label for="liczba_licencji">Wybierz liczbę licencji</label><br>
+            <label for="imie"></label><input id="imie" placeholder="imię" type="text" name="imie">
+            <label for="nazwisko"></label><input id="nazwisko" placeholder="nazwisko" type="text" name="nazwisko">
+            <label for="mail"></label><input id="mail" placeholder="e-mail" type="email" name="adres_email">
             <select id="liczba_licencji">
-                <option value="1">1 licencja</option>
-                <option value="2">Więcej</option>
+                <option value="1">Liczba licencji</option>
+                <option value="2">1 licencja</option>
+                <option value="3">Więcej</option>
             </select><br>
             <p>Wybierz wersję językową</p>
             <label for="pl">Wersja polska</label><input id="pl" type="radio" name="odpowiedz" value="tak"><br>
             <label for="eng">Wersja angielska</label><input id="eng" type="radio" name="odpowiedz" value="tak"><br>
-            <input type="submit" value="wyślij">
+            <input id="przycisk_wyslij" type="submit" value="wyślij">
         </form>
     </div>
 </section>
