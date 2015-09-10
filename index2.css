@@ -1,0 +1,8 @@
+#kontener {
+    background-color: red;
+    height: 500px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
