@@ -1,4 +1,33 @@
 
+#logo {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#header {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-image: url('../images/download.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: aquamarine;
+}
+
+#telefon {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #007d00;
+    background-color: bisque;
+
+}
+
 #formularz{
     margin: 15px 15px 15px 15px;
 }
@@ -7,5 +36,3 @@
 
 
 
-
-007D00
