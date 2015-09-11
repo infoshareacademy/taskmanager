@@ -126,10 +126,10 @@ a:hover {
     color: black;
     text-align: center;
     padding-top: 150px;
-    padding-right: 350px;
-    padding-left: 350px;
+    padding-right: 750px;
+    padding-left: 40px;
     font-size: 40px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #zajawka h2 {
     color: black;
@@ -137,8 +137,8 @@ a:hover {
     padding-top: 5px;
     padding-right: 750px;
     padding-left: 40px;
-    font-size: 0.8em;
-    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    font-family:'Josefin Sans', sans-serif;
 }
 
 
