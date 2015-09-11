@@ -23,7 +23,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-color: aquamarine;
+    background-color: lightgray;
 }
 
 #telefon {
@@ -107,3 +107,23 @@ body {
     margin-top: 5px;
 }
 
+
+
+
+#zajawka h1{
+    color: black;
+    text-align: center;
+    padding-top: 150px;
+    padding-right: 350px;
+    padding-left: 350px;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+#zajawka h2{
+    color: black;
+    text-align:justify;
+    padding-top: 5px;
+    padding-right: 750px;
+    padding-left: 40px;
+    font-size:0,8em;
+    font-family: 'Lobster', cursive;
