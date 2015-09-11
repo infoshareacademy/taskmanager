@@ -96,6 +96,31 @@ a:hover {
     margin-left: 50px;
 }
 
+/*features_images*/
+
+#features_images {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 100%;
+    width: 1286px;
+
+
+}
+
+.image {
+
+    margin-bottom: -4px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
 
 /*funkcjonalnosci*/
 
@@ -111,8 +136,14 @@ a:hover {
 
 .wrapper i {
 
-    color: #007d00;
+    color: #0091ea;
+;
 
+}
+
+.wrapper i:hover {
+
+    color: #81D4FA;
 }
 
 .feature-grid {
@@ -120,6 +151,7 @@ a:hover {
     text-align: center;
     position: relative;
     display: block;
+    background-color: white;
 
 
 
@@ -169,4 +201,14 @@ a:hover {
     height: 100px;
     text-align: center;
     position: relative;
+}
+
+#footer i {
+    color: #0091ea;
+
+}
+
+#footer i:hover {
+    color: #81D4FA;
+
 }
