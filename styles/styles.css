@@ -57,12 +57,19 @@ a:hover {
     padding-right:5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    height: auto;
+    height: 500px;
     width: 100%;
 }
 
-#formularz p{
-    font-family: 'Montserrat', sans-serif;
+.form_frame {
+    width: 778px;
+    height: 200px;
+    background-color: #FDFDFD;
+    padding: 50px;
+    color: black;
+
+
+
 }
 
 #imie{
@@ -157,9 +164,9 @@ a:hover {
 #footer {
     box-sizing: border-box;
     width: 100%;
-    padding: 50px 0;
+    padding: 35px 0;
     border-top: 1px solid #e3e3e3;
-    height: 130px;
+    height: 100px;
     text-align: center;
     position: relative;
 }
