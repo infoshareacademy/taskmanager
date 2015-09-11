@@ -102,11 +102,19 @@ a:hover {
 
 }
 
+.wrapper i {
+
+    color: #007d00;
+
+}
+
 .feature-grid {
     margin-top: 50px;
     text-align: center;
     position: relative;
     display: block;
+
+
 
 }
 
