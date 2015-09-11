@@ -121,11 +121,22 @@ a:hover {
     font-size: 40px;
     font-family: 'Lobster', cursive;
 }
-#zajawka h2{
+#zajawka h2 {
     color: black;
-    text-align:justify;
+    text-align: justify;
     padding-top: 5px;
     padding-right: 750px;
     padding-left: 40px;
-    font-size:0,8em;
+    font-size: 0.8em;
     font-family: 'Lobster', cursive;
+}
+
+#footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px 0;
+    border-top: 1px solid #e3e3e3;
+    height: 130px;
+    text-align: center;
+    position: relative;
+}
