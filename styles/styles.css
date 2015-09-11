@@ -4,9 +4,13 @@ body {
     letter-spacing: -0.015em;
 }
 
+a {
+    color: #007d00;
+}
 
-
-
+a:hover {
+    color: lightgreen;
+}
 
 #logo {
     width: 100px;
@@ -16,26 +20,24 @@ body {
 }
 
 #header {
-    position: absolute;
     height: 100px;
     width: 100%;
-    background-image: url('../images/download.png');
+    border: 3px solid #007d00;
+    border-radius: 10px;
+    background-image: url('../images/logo_pp.png');
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: contain;
-    background-color: aquamarine;
 }
 
 #telefon {
-    position: absolute;
-    top: 50%;
-    right: 100px;
+    margin: 15px;
+    text-align: right;
     font-weight: bolder;
-    font-size: x-large;
+    font-size: larger;
     color: #007d00;
-    background-color: bisque;
 
 }
+
 
 #formularz{
     background-color: #007d00;
