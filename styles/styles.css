@@ -52,16 +52,13 @@ a:hover {
 #formularz{
     background-color: #007d00;
     color: white;
-    position: fixed;
-    right: 0px;
-    top:100px;
-    margin: 20px;
+    position: relative;
     padding-left:10px;
     padding-right:5px;
     padding-top: 10px;
     padding-bottom: 10px;
     height: auto;
-    width: 180px;
+    width: 100%;
 }
 
 #formularz p{
