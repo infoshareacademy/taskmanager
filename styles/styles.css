@@ -4,48 +4,50 @@ body {
     font: inherit;
     font-size: 100%;
     letter-spacing: -0.015em;
+    margin: 0px;
 }
 
 a {
-    color: #007d00;
+    color: #0091ea;
 }
 
 a:hover {
-    color: lightgreen;
+    color: #81D4FA;
 }
-
-
-/*logo*/
-
-#logo {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 
 /*header*/
 
 #header {
-    height: 100px;
-    width: 100%;
-    border: 3px solid #007d00;
-    border-radius: 10px;
-    background-image: url('../images/logo_pp.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 70px;
+    width: 98%;
 }
 
-#telefon {
-    margin: 15px;
-    text-align: right;
-    font-weight: bolder;
-    font-size: larger;
-    color: #007d00;
-
+#logo {
+    height: 50px;
+    margin: 10px 10px 0px 50px;
+    display: block;
+    float: left;
 }
 
+#ikony {
+    display: block;
+    float: right;
+    color: #0091ea;
+    margin: 10px;
+}
+
+#button {
+    background-color: #0091ea;
+    color: white;
+    font-size: x-large;
+    border-radius: 5px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+#button:hover {
+    background-color: #81D4FA;
+}
 
 /*formularz*/
 
@@ -177,6 +179,7 @@ a:hover {
     padding-left: 40px;
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
 }
 #zajawka h2 {
     color: black;
