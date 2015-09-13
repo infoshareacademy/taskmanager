@@ -102,24 +102,21 @@
 </section>
 
 <section id="formularz">
-    <div class="form_frame">
-        <p>Zostaw kontakt</p>
-        <form action="" method="post">
-            <label for="imie"></label><input id="imie" placeholder="imię" type="text" name="imie">
-            <label for="nazwisko"></label><input id="nazwisko" placeholder="nazwisko" type="text" name="nazwisko">
-            <label for="mail"></label><input id="mail" placeholder="e-mail" type="email" name="adres_email">
-            <select id="liczba_licencji">
-                <option value="1">Liczba licencji</option>
-                <option value="2">1 licencja</option>
-                <option value="3">Więcej</option>
-            </select><br>
-            <p>Wybierz wersję językową</p>
-            <label for="pl">Wersja polska</label><input id="pl" type="radio" name="odpowiedz" value="tak"><br>
-            <label for="eng">Wersja angielska</label><input id="eng" type="radio" name="odpowiedz" value="tak"><br>
-            <input id="przycisk_wyslij" type="submit" value="wyślij">
-        </form>
-    </div>
+    <form method="post" name="sign up for beta form">
+        <div class="tytul">
+            <p>Zapisz się do newsletera</p>
+        </div>
+        <div class="opis">
+            <p>Zapisz się i bądź na bieżąco ze wszystkimi zmianami</p>
+        </div>
+        <div class="input">
+            <input type="text" class="button" id="email" name="email" placeholder="Twój email">
+            <input type="submit" class="button" id="submit" value="SIGN UP">
+        </div>
+    </form>
 </section>
+
+
 
 <footer id="footer">
     <span>&copy; Pied Piper 2015</span><br>
