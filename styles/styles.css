@@ -2,9 +2,14 @@
 
 body {
     font: inherit;
+    font-family: "Josefin Sans";
     font-size: 100%;
     letter-spacing: -0.015em;
     margin: 0;
+}
+
+p {
+    font-family: "Josefin Sans";
 }
 
 a {
@@ -71,9 +76,6 @@ form {
     line-height: 5%;
 }
 
-p{
-    font-family: "Josefin Sans";
-}
 
 .opis {
 
@@ -189,28 +191,28 @@ p{
 
 /*zajawka*/
 
-#zajawka h1 {
-    color: black;
-    text-align: center;
-    padding-top: 150px;
-    padding-right: 750px;
-    padding-left: 40px;
-    font-size: 40px;
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0;
-}
-#zajawka h2 {
-    color: black;
-    text-align: justify;
-    padding-top: 5px;
-    padding-right: 750px;
-    padding-left: 40px;
-    font-size: 1em;
-    font-family:'Josefin Sans', sans-serif;
+#zajawka {
+    height: 500px;
+    width: auto;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/zajawka2.jpg');
+    background-size: cover;
 }
 
-
-
+#zajawka-h1-h2 {
+    float: left;
+    width: 50%;
+    background-color: blue;
+    background-size: cover;
+}
+#zajawka-prawy{
+    float: right;
+    width: 50%;
+    background-color: red;
+    background-size: cover;
+}
 
 /*stopka*/
 
