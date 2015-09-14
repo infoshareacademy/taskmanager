@@ -191,27 +191,53 @@ form {
 #zajawka {
     height: 500px;
     width: auto;
-    background-color: rgba(255,0,0,0.5);
+    background-color: #0091ea;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-#zajawka-h1-h2 {
+#zajawka-lewy {
     float: left;
     height: 100%;
     width: 50%;
-    background-color: rgba(255,0,0,0.5);
-
+    background-color: transparent;
     background-size: cover;
+    color:black;
+    text-align: left;
+
 }
+#zajawka-wewnatrz{
+    height: 100%;
+    position: relative;
+    margin: auto;
+
+}
+.default-width {
+    width: 1280px;
+}
+/*zajawka*/
+
 #zajawka-prawy{
     float: right;
     width: 50%;
     height: 100%;
-    background-color: rgba(255,0,0,0.5);
     background-size: cover;
-    background-image: url('../images/zajawka2.jpg');
+    background-image: url('../images/Zajawka_prawy.png');
+}
+#zajawka-lewy h1{
+    text-align: left;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px
+}
+
+#zajawka-lewy h2{
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px
 }
 
 /*stopka*/
