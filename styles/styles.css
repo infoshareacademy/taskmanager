@@ -214,6 +214,7 @@ form {
     color: #81D4FA;
 }
 
+
 .feature-grid {
     margin-top: 50px;
     text-align: center;
@@ -223,6 +224,13 @@ form {
 
 
 
+}
+
+.feature-grid h2 {
+
+    color: #737373;
+    font-size: 40px;
+    font-family: "Josefin Sans";
 }
 
 .features-item {
