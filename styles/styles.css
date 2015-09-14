@@ -195,9 +195,15 @@ form {
     background-position: center;
     background-image: url('../images/zajawka2.jpg');
     background-size: cover;
+}
 
-
-
+#zajawka-h1-h2 {
+    float: left;
+    width: 50%;
+    background-color: blue;
+    background-size: cover;
+}
+#
 
 
 /*#zajawka h1 {*/
