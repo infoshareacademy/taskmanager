@@ -86,13 +86,9 @@ form {
     align-items: center;
 }
 
-.button {
-    height: 44px;
-    border: 1px solid #737373;
-}
-
 #email {
     width: 75%;
+    height:44px;
     background: #FDFCFB;
     color: #737373;
     letter-spacing: 1px;
@@ -100,9 +96,10 @@ form {
     border-radius: 5px 0 0 5px;
 }
 
-#submit {
+.submit {
     width: 150px;
     height: 48px;
+    border: 1px solid #737373;
     background: #E86C8D;
     font-family: inherit;
     font-weight: bold;
@@ -113,7 +110,7 @@ form {
     transition: background .3s ease-in ;
 }
 
-#submit:hover {
+.submit:hover {
     background: #0091ea;
 }
 
