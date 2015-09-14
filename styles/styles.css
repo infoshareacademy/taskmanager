@@ -51,52 +51,68 @@ a:hover {
 
 /*formularz*/
 
-#formularz{
-    background-color: #007d00;
-    color: white;
+#formularz {
     position: relative;
-    padding-left:10px;
-    padding-right:5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 500px;
-    width: 100%;
+    height: 250px;
+    color: #737373;
+    text-align: center;
+    background-color: cornsilk;
+    ;
 }
 
-.form_frame {
-    width: 778px;
-    height: 200px;
-    background-color: #FDFDFD;
-    padding: 50px;
-    color: black;
-
-
-
+form {
+    width: 500px;
+    margin: 17% auto;
 }
 
-#imie{
-    margin-top: 5px;
+.tytul {
+
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
-#nazwisko{
-    margin-top: 5px;
+.opis {
+    font-size: 14px;
 }
 
-#mail{
-    margin-top: 5px;
+
+.input {
+    display: flex;
+    align-items: center;
 }
 
-#liczba_licencji{
-    margin-top: 5px;
+.button {
+    height: 44px;
+    border: 1px solid #737373;
 }
 
-#przycisk_wyslij{
-    color:white;
-    height:30px;
-    width: 80px;
-    margin-top: 10px;
-    margin-left: 50px;
+#email {
+    width: 75%;
+    background: #FDFCFB;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border-radius: 5px 0 0 5px;
 }
+
+#submit {
+    width: 150px;
+    height: 46px;
+    background: #E86C8D;
+    font-family: inherit;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .3s ease-in ;
+}
+
+#submit:hover {
+    background: #0091ea;
+}
+
 
 /*features_images*/
 
