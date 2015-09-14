@@ -23,35 +23,47 @@ a:hover {
 /*header*/
 
 #header {
-    height: 70px;
-    width: 98%;
-}
+    height: 60px;
+    max-width: 1700px;
+    margin: auto;
 
+}
 #logo {
-    height: 50px;
+    height: 40px;
     margin: 10px 10px 0 50px;
     display: block;
     float: left;
 }
 
-#ikony {
-    display: block;
-    float: right;
-    color: #0091ea;
-    margin: 10px;
-}
+/*Menu*/
 
-#button {
-    background-color: #0091ea;
-    color: white;
-    font-size: larger;
-    border-radius: 5px;
-    margin-right: 50px;
+ul#menu {
+    display: inline-block;
+    left: 120px;
     padding: 10px;
 }
 
-#button:hover {
-    background-color: #81D4FA;
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    color: #0091ea;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+ul#menu li a:hover {
+    color: #E86C8D;
+}
+
+#zapisz_header {
+    width: 150px;
+    height: 42px;
+    border-radius: 5px;
+    display: block;
+    float: right;
+    margin: 10px 50px 10px 0;
 }
 
 /*formularz*/
@@ -86,13 +98,9 @@ form {
     align-items: center;
 }
 
-.button {
-    height: 44px;
-    border: 1px solid #737373;
-}
-
 #email {
     width: 75%;
+    height:44px;
     background: #FDFCFB;
     color: #737373;
     letter-spacing: 1px;
@@ -103,6 +111,7 @@ form {
 .submit {
     width: 150px;
     height: 48px;
+    border: 1px solid #737373;
     background: #E86C8D;
     font-family: inherit;
     font-weight: bold;
