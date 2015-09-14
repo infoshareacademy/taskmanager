@@ -191,7 +191,26 @@ form {
 
 /*zajawka*/
 
-#zajawka h1 {
+#zajawka {
+    height: 500px;
+    width: auto;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/zajawka2.jpg');
+    background-size: cover;
+}
+
+#zajawka-h1-h2 {
+    float: left;
+    width: 50%;
+    background-color: blue;
+    background-size: cover;
+}
+#
+
+
+/*#zajawka h1 {*/
     color: black;
     text-align: center;
     padding-top: 150px;
@@ -201,7 +220,7 @@ form {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
 }
-#zajawka h2 {
+/*#zajawka h2 {*/
     color: black;
     text-align: justify;
     padding-top: 5px;
