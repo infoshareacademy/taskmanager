@@ -10,6 +10,7 @@ body {
 
 p {
     font-family: "Josefin Sans";
+    color: #737373;
 }
 
 a {
@@ -133,7 +134,7 @@ form {
     position: relative;
     box-sizing: border-box;
     margin-top: 50px;
-    margin-left: auto;
+    margin: auto;
     min-height: 100%;
     width: 1286px;
 
@@ -238,10 +239,10 @@ form {
 
 }
 
-.feature-grid h2 {
+.feature-grid h3 {
 
     color: #737373;
-    font-size: 40px;
+    font-size: 28px;
     font-family: "Josefin Sans";
 }
 
