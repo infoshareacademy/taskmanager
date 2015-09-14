@@ -123,7 +123,8 @@ form {
 #features_images {
     position: relative;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: auto;
     min-height: 100%;
     width: 1286px;
 
@@ -133,12 +134,60 @@ form {
 .image {
 
     margin-bottom: -4px;
+    margin-left: 50px;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
 }
 
 
+.image_text {
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 500px;
+    margin: 50px;
+    text-align: left;
+
+}
+
+.image_text_lewy {
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 100px;
+    text-align: right;
+
+}
+.image_text h1 {
+
+    color: #0091ea;
+    font-size: 40px;
+    font-family: "Josefin Sans";
+}
+
+.image_text p {
+
+    color:#737373;
+    font-family: "Josefin Sans";
+
+}
+
+.image_text_lewy h1 {
+
+    color: #0091ea;
+    font-size: 40px;
+    font-family: "Josefin Sans";
+}
+
+.image_text_lewy p {
+
+    color:#737373;
+    font-family: "Josefin Sans";
+
+}
 
 
 
