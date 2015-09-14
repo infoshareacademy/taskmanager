@@ -2,9 +2,14 @@
 
 body {
     font: inherit;
+    font-family: "Josefin Sans";
     font-size: 100%;
     letter-spacing: -0.015em;
     margin: 0;
+}
+
+p {
+    font-family: "Josefin Sans";
 }
 
 a {
@@ -71,9 +76,6 @@ form {
     line-height: 5%;
 }
 
-p{
-    font-family: "Josefin Sans";
-}
 
 .opis {
 
