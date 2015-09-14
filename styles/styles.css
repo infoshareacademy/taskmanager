@@ -86,13 +86,9 @@ form {
     align-items: center;
 }
 
-.button {
-    height: 44px;
-    border: 1px solid #737373;
-}
-
 #email {
     width: 75%;
+    height:44px;
     background: #FDFCFB;
     color: #737373;
     letter-spacing: 1px;
@@ -103,6 +99,7 @@ form {
 .submit {
     width: 150px;
     height: 48px;
+    border: 1px solid #737373;
     background: #E86C8D;
     font-family: inherit;
     font-weight: bold;
