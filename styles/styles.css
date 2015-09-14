@@ -4,7 +4,7 @@ body {
     font: inherit;
     font-size: 100%;
     letter-spacing: -0.015em;
-    margin: 0px;
+    margin: 0;
 }
 
 a {
@@ -24,7 +24,7 @@ a:hover {
 
 #logo {
     height: 50px;
-    margin: 10px 10px 0px 50px;
+    margin: 10px 10px 0 50px;
     display: block;
     float: left;
 }
@@ -51,31 +51,33 @@ a:hover {
 
 /*formularz*/
 
+
 #formularz {
     position: relative;
-    height: 250px;
     color: #737373;
     text-align: center;
-    background-color: cornsilk;
-    ;
+    background-color: #F0FAFF;
+    width: auto;
 }
 
 form {
+    margin: auto;
     width: 500px;
-    margin: 17% auto;
+    padding: 15px;
 }
 
 .tytul {
-
     font-size: 35px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+    line-height: 5%;
+}
+
+p{
+    font-family: "Josefin Sans";
 }
 
 .opis {
-    font-size: 14px;
-}
 
+}
 
 .input {
     display: flex;
@@ -98,7 +100,7 @@ form {
 
 #submit {
     width: 150px;
-    height: 46px;
+    height: 48px;
     background: #E86C8D;
     font-family: inherit;
     font-weight: bold;
@@ -195,7 +197,7 @@ form {
     padding-left: 40px;
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
-    margin: 0px;
+    margin: 0;
 }
 #zajawka h2 {
     color: black;
