@@ -191,10 +191,9 @@ form {
 #zajawka {
     height: 500px;
     width: auto;
-    background-color: black;
+    background-color: #0091ea;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../images/zajawka2.jpg');
     background-size: cover;
 }
 
