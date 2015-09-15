@@ -1,11 +1,14 @@
+/*------------------------------------------------------------------------------------------------*/
+
 /* ogolne */
 
 body {
+
     font: inherit;
     font-family: "Josefin Sans";
     font-size: 100%;
-    letter-spacing: -0.015em;
     margin: 0;
+    color: #737373;
 }
 
 p {
@@ -21,20 +24,76 @@ a:hover {
     color: #81D4FA;
 }
 
+i {
+
+    color: #205081;
+
+}
+
+i:hover {
+
+    color: #81D4FA;
+}
+
+ h1 {
+
+    color: #0091ea;
+    font-size: 40px;
+}
+
+ h2, h3, h4, h5 {
+     color: #737373;
+ }
+
+ h2 {
+     font-size: 25px;
+ }
+
+ h3 {
+
+     font-size: 25px;
+ }
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+/*wrapper - TRZYMA KONTENT STRONY !!!! */
+
+.wrapper {
+
+    position: relative;
+    width: 1020px;
+    min-height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+
 /*header*/
 
 #header {
     height: 60px;
-    max-width: 1700px;
+    width: auto;
     margin: auto;
+    background-color: #205081;
 
 }
+
+
 #logo {
     height: 40px;
     margin: 10px 10px 0 50px;
     display: block;
     float: left;
 }
+
+/*------------------------------------------------------------------------------------------------*/
+
 
 /*Menu*/
 
@@ -49,7 +108,7 @@ ul#menu li {
 }
 
 ul#menu li a {
-    color: #0091ea;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -59,6 +118,7 @@ ul#menu li a:hover {
 }
 
 #zapisz_header {
+
     width: 150px;
     height: 42px;
     border-radius: 5px;
@@ -67,15 +127,19 @@ ul#menu li a:hover {
     margin: 10px 50px 10px 0;
 }
 
+/*------------------------------------------------------------------------------------------------*/
+
+
 /*formularz*/
 
 
 #formularz {
     position: relative;
-    color: #737373;
     text-align: center;
     background-color: #F0FAFF;
     width: auto;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 form {
@@ -103,10 +167,10 @@ form {
     width: 75%;
     height:44px;
     background: #FDFCFB;
-    color: #737373;
     letter-spacing: 1px;
     text-indent: 5%;
     border-radius: 5px 0 0 5px;
+    color: black;
 }
 
 .submit {
@@ -126,6 +190,9 @@ form {
 .submit:hover {
     background: #0091ea;
 }
+
+
+/*------------------------------------------------------------------------------------------------*/
 
 
 /*features_images*/
@@ -171,79 +238,23 @@ form {
     text-align: right;
 
 }
-.image_text h1 {
-
-    color: #0091ea;
-    font-size: 40px;
-    font-family: "Josefin Sans";
-}
-
-.image_text p {
-
-    color:#737373;
-    font-family: "Josefin Sans";
-
-}
-
-.image_text_lewy h1 {
-
-    color: #0091ea;
-    font-size: 40px;
-    font-family: "Josefin Sans";
-}
-
-.image_text_lewy p {
-
-    color:#737373;
-    font-family: "Josefin Sans";
-
-}
 
 
-
+/*------------------------------------------------------------------------------------------------*/
 
 
 /*funkcjonalnosci*/
 
 
-.wrapper {
-    position: relative;
-    width: 920px;
-    min-height: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-
-}
-
-.wrapper i {
-
-    color: #0091ea;
-;
-
-}
-
-.wrapper i:hover {
-
-    color: #81D4FA;
-}
-
 
 .feature-grid {
+
     margin-top: 50px;
     text-align: center;
     position: relative;
     display: block;
     background-color: white;
 
-
-
-}
-
-.feature-grid h3 {
-
-    color: #737373;
-    font-size: 28px;
-    font-family: "Josefin Sans";
 }
 
 .features-item {
@@ -252,9 +263,11 @@ form {
     padding: 20px;
     vertical-align: top;
     width: 25%;
-    font-size: 16px;
 
 }
+
+/*------------------------------------------------------------------------------------------------*/
+
 
 /*zajawka*/
 
@@ -273,42 +286,46 @@ form {
     width: 50%;
     background-color: transparent;
     background-size: cover;
-    color:black;
     text-align: left;
 
 }
-#zajawka-wewnatrz{
+#zajawka-wewnatrz {
+
     height: 100%;
     position: relative;
     margin: auto;
 
 }
-.default-width {
-    width: 1280px;
-}
-/*zajawka*/
 
-#zajawka-prawy{
+#zajawka-prawy {
+
     float: right;
     width: 50%;
     height: 100%;
     background-size: cover;
     background-image: url('../images/Zajawka_prawy.png');
 }
-#zajawka-lewy h1{
+
+#zajawka-lewy h1 {
+
     text-align: left;
     margin-top: 100px;
     margin-right: 100px;
-    margin-left: 100px
+    margin-left: 100px;
+    color: white;
 }
 
-#zajawka-lewy h2{
+#zajawka-lewy h2 {
+
     text-align: left;
     margin-top: 40px;
     margin-right: 100px;
     margin-bottom: 100px;
-    margin-left: 100px
+    margin-left: 100px;
+    color: white;
 }
+
+/*------------------------------------------------------------------------------------------------*/
 
 /*stopka*/
 
@@ -320,14 +337,26 @@ form {
     height: 100px;
     text-align: center;
     position: relative;
+    background-color: #205081;
 }
 
 #footer i {
-    color: #0091ea;
 
+    color:white;
 }
 
 #footer i:hover {
-    color: #81D4FA;
+
+    color:#737373;
+}
+
+#footer span {
+
+    color: white;
+    font-family: sans-serif;
+    display: block;
 
 }
+
+
+/*------------------------------------------------------------------------------------------------*/
