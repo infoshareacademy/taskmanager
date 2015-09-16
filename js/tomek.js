@@ -1,5 +1,5 @@
 var zajawkapr = document.getElementById('zajawka-prawy');
-zajawkapr.addEventListener('mouseover', changePic);
+//zajawkapr.addEventListener('click', changePic);
 
 function changePic() {
     if (zajawkapr.className == "zajawka-2") {
@@ -11,3 +11,4 @@ function changePic() {
     }
 }
 
+setInterval(changePic,1500);
