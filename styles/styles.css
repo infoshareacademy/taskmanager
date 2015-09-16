@@ -167,6 +167,7 @@ ul#menu li a:hover {
 
 
 #formularz {
+    border: 1px solid black;
     position: relative;
     text-align: center;
     background-color: #F0FAFF;
@@ -176,6 +177,7 @@ ul#menu li a:hover {
 }
 
 form {
+    border: 1px solid black;
     margin: auto;
     width: 500px;
     padding: 15px;
