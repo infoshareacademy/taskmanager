@@ -140,16 +140,15 @@ ul#menu li a:hover {
     left: 25%;
     top: 20%;
     bottom: 30%;
-    background-color: white;
     z-index: 101;
     position: fixed;
 
 }
 
 #icancel {
+    position: static;
+    margin-right:-510px;
     color: red;
-    margin-right: -10px;
-
 }
 
 #lightbox {
@@ -169,7 +168,6 @@ ul#menu li a:hover {
 
 
 #formularz {
-    position: relative;
     text-align: center;
     background-color: #F0FAFF;
     width: auto;
@@ -180,14 +178,12 @@ ul#menu li a:hover {
 form {
     margin: auto;
     width: 500px;
-    padding: 15px;
 }
 
 .tytul {
     font-size: 35px;
     line-height: 5%;
 }
-
 
 .opis {
 
