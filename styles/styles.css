@@ -140,16 +140,14 @@ ul#menu li a:hover {
     left: 25%;
     top: 20%;
     bottom: 30%;
-    background-color: white;
     z-index: 101;
     position: fixed;
 
 }
 
 #icancel {
+    margin-right: 0;
     color: red;
-    margin-right: -10px;
-
 }
 
 #lightbox {
