@@ -9,6 +9,8 @@ body {
     font-size: 100%;
     margin: 0;
     color: #737373;
+    font-family: "Josefin Sans";
+
 }
 
 p {
@@ -304,6 +306,11 @@ form {
 
 /*zajawka*/
 
+.default-width {
+    width: 1280px;
+}
+
+
 #zajawka {
     height: 500px;
     width: auto;
@@ -314,12 +321,16 @@ form {
 }
 
 #zajawka-lewy {
-    float: left;
-    height: 100%;
-    width: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 50%;
     background-color: transparent;
     background-size: cover;
     text-align: left;
+    color:black;
+
 
 }
 #zajawka-wewnatrz {
@@ -328,29 +339,36 @@ form {
     position: relative;
     margin: auto;
 
+
 }
 
-#zajawka-prawy {
-
-    float: right;
-    width: 50%;
-    height: 100%;
+#zajawka-prawy{
+    position: absolute;
+    top:0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
     background-size: cover;
+
+}
+.zajawka-1{
     background-image: url('../images/Zajawka_prawy.png');
 }
+.zajawka-2{
+    background-image: url('../images/Post-it.jpg');
 
-#zajawka-lewy h1 {
 
-    text-align: left;
+}
+#zajawka-lewy h1{
+    text-align: center;
     margin-top: 100px;
     margin-right: 100px;
     margin-left: 100px;
     color: white;
 }
 
-#zajawka-lewy h2 {
-
-    text-align: left;
+#zajawka-lewy h2{
+    text-align: center;
     margin-top: 40px;
     margin-right: 100px;
     margin-bottom: 100px;
