@@ -8,4 +8,3 @@ function formvalidation(){
     }
 }
 
-document.getElementById("zapisz_sie").addEventListener("click", formvalidation);
