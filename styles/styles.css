@@ -319,6 +319,12 @@ form {
     background-position: center;
     background-size: cover;
 }
+#zajawka-wewnatrz {
+
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
 
 #zajawka-lewy {
     position: absolute;
@@ -330,15 +336,6 @@ form {
     background-size: cover;
     text-align: left;
     color:black;
-
-
-}
-#zajawka-wewnatrz {
-
-    height: 100%;
-    position: relative;
-    margin: auto;
-
 
 }
 
@@ -353,9 +350,19 @@ form {
 }
 .zajawka-1{
     background-image: url('../images/Zajawka_prawy.png');
+    background-size: contain !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    top: 0;
+
 }
 .zajawka-2{
     background-image: url('../images/Post-it.jpg');
+    background-size: contain !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    top: 0;
+
 
 
 }
