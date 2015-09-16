@@ -187,14 +187,22 @@
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 
 <script>
-$(document).ready(function () {
-    $('.thank_you').hide();
-    $('#zapisz_sie').click(function(){
-        console.log(12);
-        $('.thank_you').show();
+    $(document).ready(function () {
+        $('.thank_you').hide();
+        $('#zapisz_sie').click(function(){
+            console.log(12);
+            $('.thank_you').show();
+        });
     });
-})
 
+    $(document).ready(function(){
+            $('#icancel').click(function(){
+                $('#formularz').hide(function(){
+                    $(this).animate({
+                    },2000)
+                });
+            });
+    });
 </script>
 
 <script src="js/kuba.js"></script>

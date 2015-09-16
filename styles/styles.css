@@ -64,10 +64,13 @@ i:hover {
 .wrapper {
 
     position: relative;
-    width: auto;
+    width: 1020px;
     min-height: 100%;
     margin: auto;
     box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
 }
 
 /*------------------------------------------------------------------------------------------------*/
@@ -143,6 +146,7 @@ ul#menu li a:hover {
 }
 
 #icancel {
+    position: static;
     margin-right:-510px;
     color: red;
 }
@@ -158,14 +162,12 @@ ul#menu li a:hover {
     z-index: 100;
 }
 
-/*---------------------------------------------------*/
+
 
 /*formularz*/
 
 
 #formularz {
-    border: 1px solid black;
-    position: relative;
     text-align: center;
     background-color: #F0FAFF;
     width: auto;
@@ -174,10 +176,8 @@ ul#menu li a:hover {
 }
 
 form {
-    border: 1px solid black;
     margin: auto;
     width: 500px;
-    padding: 0 15px 15px 15px;
 }
 
 .tytul {
@@ -202,7 +202,6 @@ form {
     text-indent: 5%;
     border-radius: 5px 0 0 5px;
     color: black;
-    font-size: 16px;
 }
 
 .submit {
@@ -236,6 +235,7 @@ form {
     margin: auto;
     min-height: 100%;
     width: 1286px;
+
 
 }
 
@@ -279,12 +279,12 @@ form {
 
 
 .feature-grid {
+
+    margin-top: 50px;
     text-align: center;
     position: relative;
     display: block;
-    background-color: #F8F8F8;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background-color: white;
 
 }
 
@@ -314,7 +314,6 @@ form {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 50px;
 }
 
 #zajawka-lewy {
@@ -380,9 +379,9 @@ form {
 #footer {
     box-sizing: border-box;
     width: 100%;
-    padding-top: 10px;
+    padding: 35px 0;
     border-top: 1px solid #e3e3e3;
-    height: auto;
+    height: 100px;
     text-align: center;
     position: relative;
     background-color: #205081;
@@ -403,7 +402,6 @@ form {
     color: white;
     font-family: sans-serif;
     display: block;
-    font-size: 10px;
 
 }
 
