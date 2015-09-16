@@ -146,7 +146,7 @@ ul#menu li a:hover {
 }
 
 #icancel {
-    margin-right: 0;
+    margin-right:-510px;
     color: red;
 }
 
@@ -180,14 +180,13 @@ form {
     border: 1px solid black;
     margin: auto;
     width: 500px;
-    padding: 15px;
+    padding: 0 15px 15px 15px;
 }
 
 .tytul {
     font-size: 35px;
     line-height: 5%;
 }
-
 
 .opis {
 
