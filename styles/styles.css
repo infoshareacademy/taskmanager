@@ -129,7 +129,40 @@ ul#menu li a:hover {
     margin: 10px 50px 10px 0;
 }
 
+
 /*------------------------------------------------------------------------------------------------*/
+
+/*Lightbox z formularzem*/
+
+#popup {
+    width: 50%;
+    height: auto;
+    left: 25%;
+    top: 20%;
+    bottom: 30%;
+    background-color: white;
+    z-index: 101;
+    position: fixed;
+
+}
+
+#icancel {
+    color: red;
+    margin-right: -10px;
+
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #737373;
+    opacity: 0.8;
+    z-index: 100;
+}
+
 
 
 /*formularz*/
