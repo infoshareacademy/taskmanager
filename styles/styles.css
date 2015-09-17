@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    font-family: "Josefin Sans";
+    font-family: ;
     color: #737373;
 }
 
@@ -169,10 +169,8 @@ ul#menu li a:hover {
 
 #formularz {
     text-align: center;
-    background-color: #F0FAFF;
-    width: auto;
-    height: auto;
     padding-bottom: 30px;
+    background-color: #FDFCFB;
 }
 
 form {
@@ -190,7 +188,7 @@ form {
 }
 
 .input {
-    display: flex;
+    display: block;
     align-items: center;
 }
 
@@ -198,23 +196,21 @@ form {
     width: 75%;
     height:44px;
     background: #FDFCFB;
-    letter-spacing: 1px;
     text-indent: 5%;
-    border-radius: 5px 0 0 5px;
-    color: black;
+    margin: 0 0 5px;
 }
 
 .submit {
     width: 150px;
     height: 48px;
-    border: 1px solid #737373;
-    background: #E86C8D;
-    font-family: inherit;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #FDFCFB;
     font-weight: bold;
-    color: white;
+    color: #24218a;
     letter-spacing: 1px;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
     transition: background .3s ease-in ;
 }
 
