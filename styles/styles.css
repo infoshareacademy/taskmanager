@@ -311,6 +311,12 @@ form {
     background-position: center;
     background-size: cover;
 }
+#zajawka-wewnatrz {
+
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
 
 #zajawka-lewy {
     position: absolute;
@@ -323,15 +329,6 @@ form {
     text-align: left;
     color:black;
 
-
-}
-#zajawka-wewnatrz {
-
-    height: 100%;
-    position: relative;
-    margin: auto;
-
-
 }
 
 #zajawka-prawy{
@@ -341,13 +338,26 @@ form {
     bottom: 0;
     right: 0;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 
 }
 .zajawka-1{
     background-image: url('../images/Zajawka_prawy.png');
+    background-size: contain !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    top: 0;
+
 }
 .zajawka-2{
     background-image: url('../images/Post-it.jpg');
+    background-size: contain !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    top: 0;
+
 
 
 }
@@ -367,6 +377,29 @@ form {
     margin-left: 100px;
     color: white;
 }
+
+
+/*Animacja - zajawka */
+/*#zajawka-prawy {*/
+    /*position:relative;*/
+    /*height:281px;*/
+    /*width:450px;*/
+    /*margin:0 auto;*/
+    /*background-size: contain !important;*/
+/*}*/
+/*#zajawka-prawy img {*/
+    /*position:absolute;*/
+    /*transition: opacity 1s ease-in-out;*/
+/*}*/
+
+/*#zajawka-prawy img.transparent {*/
+    /*opacity:0;*/
+/*}*/
+
+
+
+
+
 
 /*------------------------------------------------------------------------------------------------*/
 
