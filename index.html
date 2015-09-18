@@ -159,7 +159,8 @@
 <a name="form" />
 
 <section id="formularz">
-    <form name="sign up for beta form">
+    <form id="newsletter" action="pp.php" method="post">
+
         <i id="icancel" class="fa fa-times"></i>
         <div class="tytul">
             <p>Zapisz się do newsletera</p>
@@ -168,9 +169,9 @@
             <p>Zapisz się i bądź na bieżąco ze wszystkimi zmianami</p>
         </div>
         <div class="input">
-            <input type="text" class="submit" id="email" name="email" placeholder="Imię">
-            <input type="text" class="submit" id="email" name="email" placeholder="Twój email">
-            <input type="button" class="submit" id="zapisz_sie" value="Zapisz się">
+            <input type="text" class="submit" id="email" name="imie" placeholder="Imię">
+            <input type="text" class="submit" name="email" placeholder="Twój email">
+            <input type="submit" class="submit" id="zapisz_sie" name="submit" value="Zapisz się">
         </div>
         <div class="thank_you">
             <p>Dziękujemy za zapisanie się</p>
@@ -190,12 +191,16 @@
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 
 <script>
+
+    function clickfcn(){
+        //console.log(12);
+            $('.thank_you').show();
+        $('#newsletter').submit();
+    }
+
     $(document).ready(function () {
         $('.thank_you').hide();
-        $('#zapisz_sie').click(function(){
-            console.log(12);
-            $('.thank_you').show();
-        });
+        $('#zapisz_sie').click(clickfcn());
     });
 
     $(document).ready(function(){
