@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    font-family: ;
+    font-family: "Josefin Sans";
     color: #737373;
 }
 
@@ -64,7 +64,7 @@ i:hover {
 .wrapper {
 
     position: relative;
-    width: 1020px;
+    width: auto;
     min-height: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -414,6 +414,7 @@ form {
     text-align: center;
     position: relative;
     background-color: #205081;
+    font-size: 12px;
 }
 
 #footer i {
