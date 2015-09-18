@@ -64,7 +64,7 @@ i:hover {
 .wrapper {
 
     position: relative;
-    width: 1020px;
+    width: auto;
     min-height: 100%;
     margin: auto;
     box-sizing: border-box;
