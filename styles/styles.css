@@ -9,13 +9,8 @@ body {
     font-size: 100%;
     margin: 0;
     color: #737373;
-    text-align: center;
+    /*text-align: center;*/
 
-}
-
-p {
-    font-family: "Josefin Sans";
-    color: #737373;
 }
 
 a {
@@ -74,19 +69,15 @@ i:hover {
 }
 
 /*------------------------------------------------------------------------------------------------*/
+/*NaviBar*/
 
-
-/*header*/
-
-#header {
+#NaviBar {
     height: 60px;
     max-width: 1900px;
     margin: auto;
     background-color: #205081;
     background-size: cover;
-
 }
-
 
 #logo {
     height: 40px;
@@ -94,11 +85,6 @@ i:hover {
     display: block;
     float: left;
 }
-
-/*------------------------------------------------------------------------------------------------*/
-
-
-/*Menu*/
 
 ul#menu {
     display: inline-block;
@@ -120,7 +106,7 @@ ul#menu li a:hover {
     color: #E86C8D;
 }
 
-#zapisz_header {
+#buttonHeader {
 
     width: 150px;
     height: 42px;
@@ -132,7 +118,7 @@ ul#menu li a:hover {
 
 /*formularz rejestracyjny*/
 
-#lightbox {
+#lightboxRegister {
     position: fixed;
     top: 0;
     bottom: 0;
