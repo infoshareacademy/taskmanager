@@ -17,28 +17,21 @@
 </head>
 <body>
 
-<!--Lightbox z formularzem-->
+<div class="registration">
+    <form>
+        <i id="cancel" class="fa fa-times"></i>
+        <p>Zarejestruj się</p>
+        <div class="form-info">
+            <input type="text" class="text" value="Imię" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imie';}" >
+            <input type="text" class="text" value="Twoj email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Twoj email';}" >
+            <input type="text" class="text" value="Nazwa użytkownika" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nazwa użytkownika';}" >
+            <input type="password" value="Hasło" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Hasło';}">
+        </div>
+        <input type="submit" value="Zapisz sie">
+    </form>
 
-<!--<div id="popup" class="popup">-->
-    <!--<i id="icancel" class="fa fa-times"></i>-->
-    <!--<section id="formularz">-->
-        <!--<form method="post" name="sign up for beta form">-->
-            <!--<div class="tytul">-->
-                <!--<p>Zapisz się do newsletera</p>-->
-            <!--</div>-->
-            <!--<div class="opis">-->
-                <!--<p>Zapisz się i bądź na bieżąco ze wszystkimi zmianami</p>-->
-            <!--</div>-->
-            <!--<div class="input">-->
-                <!--<input type="text" class="submit" id="email" name="email" placeholder="Twój email">-->
-                <!--<input type="submit" class="submit" id="zapisz_sie" value="SIGN UP">-->
-            <!--</div>-->
-        <!--</form>-->
-    <!--</section>-->
-
-<!--</div>-->
-
-<!--<div id="lightbox" class="lightbox"></div>-->
+</div>
+<div id="lightbox" class="lightbox"></div>
 
 <header>
     <div id="header">
@@ -48,7 +41,7 @@
             <li><a href="#funkcje">SZCZEGÓŁY</a></li>
             <li><a href="#funkcje">SOCIAL MEDIA</a></li>
         </ul>
-        <a href="#form"> <button id="zapisz_header" class="submit" type="button">ZAPISZ SIĘ</button></a>
+        <button id="zapisz_header" class="submit" type="button">ZAPISZ SIĘ</button>
     </div>
 
 </header>
@@ -77,11 +70,11 @@
 
 </section>
 
-<div class="wrapper"/>
+<div class="wrapper">
 
     <section id="features_images">
         <div class="image">
-            <img src="images/teamwork.png">
+            <img src="images/feature_image_1.png">
         </div>
 
         <div class="image_text">
@@ -95,7 +88,7 @@
         </div>
 
         <div class="image">
-            <img src="images/prawy.png">
+            <img src="images/feature_image_2.png">
         </div>
 
     </section>
@@ -150,11 +143,10 @@
 
 
 
+    </section>
+        </div>
 
 
-</div>
-
-</section>
 
 <a name="form" />
 
@@ -170,7 +162,7 @@
         </div>
         <div class="input">
             <input type="text" class="submit" id="email" name="imie" placeholder="Imię">
-            <input type="text" class="submit" name="email" placeholder="Twój email">
+            <input type="text" class="submit" id="email" name="email" placeholder="Twój email">
             <input type="submit" class="submit" id="zapisz_sie" name="submit" value="Zapisz się">
         </div>
         <div class="thank_you">
@@ -189,6 +181,7 @@
 
 
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
 
 <script>
 
@@ -211,6 +204,37 @@
                 });
             });
     });
+
+    $(document).ready(function(){
+        $('#cancel').click(function(){
+            $('.registration').hide(function(){
+                $(this).animate({
+                },2000)
+            });
+            $('#lightbox').hide(function(){
+                $(this).animate({
+                },2000)
+            });
+        });
+    });
+
+    $('.registration').hide();
+    $('#lightbox').hide();
+
+    $(document).ready(function(){
+        $('#zapisz_header').click(function(){
+            $('.registration').show(function(){
+                $(this).animate({
+                },2000)
+            });
+            $('#lightbox').show(function(){
+                $(this).animate({
+                },2000)
+            });
+        });
+    });
+
+
 </script>
 <script src="js/tomek.js"></script>
 
