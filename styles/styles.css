@@ -9,7 +9,7 @@ body {
     font-size: 100%;
     margin: 0;
     color: #737373;
-    font-family: "Josefin Sans";
+    text-align: center;
 
 }
 
@@ -80,9 +80,10 @@ i:hover {
 
 #header {
     height: 60px;
-    width: auto;
+    max-width: 1900px;
     margin: auto;
     background-color: #205081;
+    background-size: cover;
 
 }
 
@@ -129,27 +130,7 @@ ul#menu li a:hover {
     margin: 10px 50px 10px 0;
 }
 
-
-/*------------------------------------------------------------------------------------------------*/
-
-/*Lightbox z formularzem*/
-
-#popup {
-    width: 50%;
-    height: auto;
-    left: 25%;
-    top: 20%;
-    bottom: 30%;
-    z-index: 101;
-    position: fixed;
-
-}
-
-#icancel {
-    position: static;
-    margin-right:-510px;
-    color: red;
-}
+/*formularz rejestracyjny*/
 
 #lightbox {
     position: fixed;
@@ -162,7 +143,82 @@ ul#menu li a:hover {
     z-index: 100;
 }
 
+#cancel {
+    position: static;
+    float: right;
+    color: red;
+}
 
+form{
+    position: relative;
+    padding-top:10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+body form li,input{
+    transition: 0.9s all;
+}
+
+.registration {
+    box-shadow:-5px 0px 30px 0px rgba(50, 50, 50, 0.59);
+    position: fixed;
+    background: #fff;
+    width: 510px;
+    left: 35%;
+    top: 20%;
+    z-index: 101;
+}
+
+input.text {
+    background: none;
+    color: #0091ea;
+    width: 70%;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid #0091ea;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+input[type="password"]{
+    outline: none;
+    background: none;
+    color:#0091ea;
+    width: 70%;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid #0091ea;
+    font-size: 20px;
+    font-weight: 100;
+}
+input[type="submit"] {
+    outline: none;
+    background: #ff331d;
+    color: #fff;
+    width: 70%;
+    margin: 25px 0 0 0;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #4fd0db;
+    transition: 1s all;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
 
 /*formularz*/
 
@@ -181,10 +237,6 @@ form {
 .tytul {
     font-size: 35px;
     line-height: 5%;
-}
-
-.opis {
-
 }
 
 .input {
@@ -218,7 +270,11 @@ form {
     background: #0091ea;
 }
 
-
+#icancel{
+    position: static;
+    margin-right: -510px;
+    color: red;
+}
 /*------------------------------------------------------------------------------------------------*/
 
 
