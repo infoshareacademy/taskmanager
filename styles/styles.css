@@ -303,7 +303,7 @@ form {
 }
 
 
-#zajawka {
+#intro {
     height: 500px;
     width: auto;
     background-color: #0091ea;
@@ -311,14 +311,14 @@ form {
     background-position: center;
     background-size: cover;
 }
-#zajawka-wewnatrz {
+#introMiddleBox {
 
     height: 100%;
     position: relative;
     margin: auto;
 }
 
-#zajawka-lewy {
+#introLeftBox {
     position: absolute;
     top:0;
     left: 0;
@@ -331,7 +331,7 @@ form {
 
 }
 
-#zajawka-prawy{
+#introRightBox{
     position: absolute;
     top:0;
     left: 50%;
@@ -343,7 +343,7 @@ form {
 
 
 }
-.zajawka-1{
+.introPic-1{
     background-image: url('../images/Zajawka_prawy.png');
     background-size: contain !important;
     background-position: center;
@@ -351,7 +351,7 @@ form {
     top: 0;
 
 }
-.zajawka-2{
+.introPic-2{
     background-image: url('../images/Post-it.jpg');
     background-size: contain !important;
     background-position: center;
