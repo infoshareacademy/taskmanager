@@ -11,4 +11,5 @@ function changePic() {
     }
 }
 
+
 setInterval(changePic,1500);
