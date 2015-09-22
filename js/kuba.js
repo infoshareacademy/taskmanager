@@ -7,4 +7,3 @@ function formvalidation(){
         alert("Brak małpy!");
     }
 }
-

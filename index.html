@@ -10,27 +10,24 @@
     <link rel="shortcut icon" href="" type="" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
 
 </head>
 <body>
 
-<div class="registration">
-    <form>
+<form class="registration">
         <i id="cancel" class="fa fa-times"></i>
         <p>Zarejestruj się</p>
         <div class="form-info">
-            <input type="text" class="text" value="Imię" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imie';}" >
-            <input type="text" class="text" value="Twoj email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Twoj email';}" >
-            <input type="text" class="text" value="Nazwa użytkownika" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nazwa użytkownika';}" >
-            <input type="password" value="Hasło" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Hasło';}">
+            <label for="name"><input type="text" class="text" value="Imię" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imie';}" ></label>
+            <label for="e-mail"><input type="text" class="text" value="Twoj email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Twoj email';}" ></label>
+            <label for="user-name"><input type="text" class="text" value="Nazwa użytkownika" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nazwa użytkownika';}" ></label>
+            <label for="password"><input type="password" value="Hasło" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Hasło';}"></label>
         </div>
         <input type="submit" value="Zapisz sie">
-    </form>
+</form>
 
-</div>
 <div id="lightbox" class="lightbox"></div>
 
 <header>
@@ -55,11 +52,7 @@
             <h1>TASKie - organization of work becomes your hobby</h1>
             <h2>TASKie is an exception among the tools made for planning, project management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
         </div>
-
-        <div id="zajawka-prawy" class ="zajawka-1">
-        </div>
-
-
+        <div id="zajawka-prawy" class ="zajawka-1"></div>
     </div>
 
 
@@ -69,7 +62,6 @@
 </section>
 
 <div class="wrapper">
-
     <section id="features_images">
         <div class="image">
             <img src="images/feature_image_1.png">
@@ -88,14 +80,8 @@
         <div class="image">
             <img src="images/feature_image_2.png">
         </div>
-
     </section>
-
     <section>
-        <a name="funkcje" />
-
-
-
         <div class="feature-grid">
 
             <h1 style=" color: #737373"> Poznaj funcjonalności.</h1>
@@ -136,17 +122,9 @@
                 <h3>Daty</h3>
                 <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
             </div>
-
         </div>
-
-
-
     </section>
-        </div>
-
-
-
-<a name="form" />
+</div>
 
 <section id="formularz">
     <form id="newsletter" action="pp.php" method="post">
@@ -159,7 +137,7 @@
             <p>Zapisz się i bądź na bieżąco ze wszystkimi zmianami</p>
         </div>
         <div class="input">
-            <input type="text" class="submit" id="email" name="imie" placeholder="Imię">
+            <input type="text" class="submit" id="imie" name="imie" placeholder="Imię">
             <input type="text" class="submit" id="email" name="email" placeholder="Twój email">
             <input type="submit" class="submit" id="zapisz_sie" name="submit" value="Zapisz się">
         </div>
