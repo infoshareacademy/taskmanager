@@ -196,6 +196,7 @@ input[type="password"]{
     font-size: 20px;
     font-weight: 100;
 }
+
 input[type="submit"] {
     outline: none;
     background: #ff331d;
