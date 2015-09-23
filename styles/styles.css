@@ -291,6 +291,7 @@ form {
     text-align: center;
     display: inline-block;
     vertical-align: middle;
+    opacity: 1;
 }
 
 
@@ -301,6 +302,8 @@ form {
     width: 500px;
     margin: 50px;
     text-align: left;
+    opacity: 1;
+
 
 }
 
