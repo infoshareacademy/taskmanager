@@ -18,15 +18,14 @@
 //   }
 //})
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
+    if ($(this).scrollTop() > 550) {
         imageAnimation();
     }
 });
 
 
 var imageAnimation = function() {
-
-    $('.image_text').delay(1000).animate({
+    $('.image_text').animate({
             opacity: 1
         }, 'slow'
     );
