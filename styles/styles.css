@@ -3,7 +3,6 @@
 /* ogolne */
 
 body {
-
     font: inherit;
     font-family: "Josefin Sans";
     font-size: 100%;
@@ -145,6 +144,7 @@ body form li,input{
 }
 
 .registration {
+    text-align: center;
     box-shadow:-5px 0px 30px 0px rgba(50, 50, 50, 0.59);
     position: fixed;
     background: #fff;
@@ -205,7 +205,7 @@ input[type="submit"]:hover {
 
 /*------------------------------------------------------------------------------------------------*/
 
-/*formularz*/
+/*formularz do newsletera*/
 
 
 #formularz {
@@ -227,6 +227,14 @@ form {
 .input {
     display: block;
     align-items: center;
+}
+
+#imie {
+    width: 75%;
+    height:44px;
+    background: #FDFCFB;
+    text-indent: 5%;
+    margin: 0 0 5px;
 }
 
 #email {
