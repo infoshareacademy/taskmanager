@@ -1,14 +1,15 @@
-var zajawkapr = document.getElementById('zajawka-prawy');
+var introPic = document.getElementById('introRightBox');
 //zajawkapr.addEventListener('click', changePic);
 
 function changePic() {
-    if (zajawkapr.className == "zajawka-2") {
-        zajawkapr.className = "zajawka-1";
+    if (introPic.className == "introPic-2") {
+        introPic.className = "introPic-1";
     }
     else {
-        zajawkapr.className = "zajawka-2";
+        introPic.className = "introPic-2";
 
     }
 }
+
 
 setInterval(changePic,1500);

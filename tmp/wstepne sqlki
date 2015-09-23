@@ -1,0 +1,17 @@
+Tabela newsletter
+
+
+INSERT INTO `tabela_newsletter`(`ID`, `imie`, `email`, `ip`, `jezyk`, `data`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])
+
+
+UPDATE `tabela_newsletter` SET `ID`=[value-1],`imie`=[value-2],`email`=[value-3],`ip`=[value-4],`jezyk`=[value-5],`data`=[value-6] WHERE 1
+
+DELETE FROM `tabela_newsletter` WHERE 1
+
+Tabela rejestracja
+
+INSERT INTO `tabela_rejestracja`(`id`, `email`, `surName`, `password`, `ip`, `telNumber`, `regDate`, `language`, `newsletter`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9])
+
+UPDATE `tabela_rejestracja` SET `id`=[value-1],`email`=[value-2],`surName`=[value-3],`password`=[value-4],`ip`=[value-5],`telNumber`=[value-6],`regDate`=[value-7],`language`=[value-8],`newsletter`=[value-9] WHERE 1
+
+DELETE FROM `tabela_rejestracja` WHERE 1
