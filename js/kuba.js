@@ -8,11 +8,6 @@ function formvalidation(){
     }
 }
 
-
-
-
-
-
     function clickfcn(){
         //console.log(12);
         $('.thank_you').show();
@@ -60,4 +55,11 @@ $(document).ready(function(){
             },2000)
         });
     });
+});
+
+/*funkcja do przewijania menu*/
+
+$("#menu").find("a").click(function(){
+    var NavId = $(this).attr("href");
+    $("body").animate({scrollTop: $(NavId).offset().top}, "slow");
 });
