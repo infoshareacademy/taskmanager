@@ -16,28 +16,13 @@
 </head>
 <body>
 
-<form class="registration">
-        <i id="cancel" class="fa fa-times"></i>
-        <p>Zarejestruj się</p>
-        <div class="form-info">
-            <label for="name"><input type="text" class="text" value="Imię" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imie';}" ></label>
-            <label for="e-mail"><input type="text" class="text" value="Twoj email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Twoj email';}" ></label>
-            <label for="user-name"><input type="text" class="text" value="Nazwa użytkownika" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nazwa użytkownika';}" ></label>
-            <label for="password"><input type="password" value="Hasło" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Hasło';}"></label>
-        </div>
-        <input type="submit" value="Zapisz sie">
-</form>
-
-</div>
-<div id="lightboxRegister"></div>
-
 <header>
     <div id="NaviBar">
         <img id="logo" src="images/logo_pp.png" alt="logo Pied Piper">
         <ul id="menu">
-            <li><a href="#funkcje">FUNKCJE</a></li>
-            <li><a href="#funkcje">SZCZEGÓŁY</a></li>
-            <li><a href="#funkcje">SOCIAL MEDIA</a></li>
+            <li><a href="">FUNKCJE</a></li>
+            <li><a href="">SZCZEGÓŁY</a></li>
+            <li><a href="">SOCIAL MEDIA</a></li>
         </ul>
         <button id="buttonHeader" class="submit" type="button">ZAPISZ SIĘ</button>
     </div>
@@ -45,33 +30,23 @@
 </header>
 
 
-<section>
-
-    <div id="intro">
+<section id="intro">
 
         <div id="introMiddleBox" class="default-width">
 
-        <div id="introLeftBox">
+            <div id="introLeftBox">
             <h1>TASKie - organization of work becomes your hobby</h1>
-            <h2>TASKie is an exception among the tools made for planning, project management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
+            <h2>TASKie is an exception among the tools made for planning, project   management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
+            </div>
+
+            <div id="introRightBox" class ="introPic-1"></div>
         </div>
-
-        <div id="introRightBox" class ="introPic-1">
-        </div>
-
-
-    </div>
-
-
-
-    </div>
-
 </section>
 
 <div class="wrapper">
     <section id="features_images">
         <div class="image">
-            <img src="images/feature_image_1.png">
+            <img src="images/feature_image_1.png" alt="">
         </div>
 
         <div class="image_text">
@@ -85,7 +60,7 @@
         </div>
 
         <div class="image">
-            <img src="images/feature_image_2.png">
+            <img src="images/feature_image_2.png" alt="">
         </div>
     </section>
     <section>
@@ -161,64 +136,28 @@
     <span>&copy; Pied Piper 2015</span><br>
 </footer>
 
+<!--Formularz rejestracyjny-->
+
+<div id="lightboxRegister">
+
+    <form class="registration">
+        <i id="cancel" class="fa fa-times"></i>
+        <p>Zarejestruj się</p>
+        <div class="form-info">
+            <input type="text" name="name" placeholder="name" class="text">
+            <input type="text" name="email" placeholder="email" class="text">
+            <input type="text" name="userName" placeholder="userName" class="text">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <input type="submit" value="Zapisz sie">
+    </form>
+</div>
+
+<!--Koniec formularza rejestracyjnego-->
+
 
 
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-
-
-<script>
-
-    function clickfcn(){
-        //console.log(12);
-            $('.thank_you').show();
-        $('#newsletter').submit();
-    }
-
-    $(document).ready(function () {
-        $('.thank_you').hide();
-        $('#zapisz_sie').click(clickfcn());
-    });
-
-    $(document).ready(function(){
-            $('#icancel').click(function(){
-                $('#formularz').hide(function(){
-                    $(this).animate({
-                    },2000)
-                });
-            });
-    });
-
-    $(document).ready(function(){
-        $('#cancel').click(function(){
-            $('.registration').hide(function(){
-                $(this).animate({
-                },2000)
-            });
-            $('#lightbox').hide(function(){
-                $(this).animate({
-                },2000)
-            });
-        });
-    });
-
-    $('.registration').hide();
-    $('#lightbox').hide();
-
-    $(document).ready(function(){
-        $('#zapisz_header').click(function(){
-            $('.registration').show(function(){
-                $(this).animate({
-                },2000)
-            });
-            $('#lightbox').show(function(){
-                $(this).animate({
-                },2000)
-            });
-        });
-    });
-
-
-</script>
 <script src="js/tomek.js"></script>
 <script src="js/kuba.js"></script>
 </body>
