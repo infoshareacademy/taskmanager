@@ -13,3 +13,9 @@ function changePic() {
 
 
 setInterval(changePic,1500);
+
+$(window).scroll(function () {
+    var imageOffset = $(introPic).offset().top - (window.innerHeight - introPic.clientHeight)/2;
+    var scroll = $(window).scrollTop();
+    introPic.style.backgroundPositionY= (imageOffset - scroll)/2 + 'px';
+});
