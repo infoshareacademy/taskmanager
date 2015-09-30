@@ -338,40 +338,6 @@ form {
             #eeeeee 100%);
 }
 
-.hvr-shutter-in-vertical {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    position: relative;
-    background: #0091ea;
-    transition-property: color;
-    transition-duration: 0.3s;
-}
-.hvr-shutter-in-vertical:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    transform: scaleY(1);
-    transform-origin: 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-.hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
-    color: white;
-}
-.hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-}
-
 
 /*------------------------------------------------------------------------------------------------*/
 
