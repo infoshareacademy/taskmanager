@@ -11,12 +11,14 @@ $(document).ready(function() {
         var licznik = 0;
         var pierwszeUruchomienie = true;
         var counter = 0;
-        $('#stopInterval').click(function () {
+        $('#stopInterval').off('click').click(function () {
             clearInterval(intervalHandler);
-            $('#endGame').hide();
             $('.postit').hide();
             $('#miniGameMask').hide();
             alert('Trudno, czas to pieniądz. Jednak i tak Twój wynik to: ' + counter);
+            licznik = 0;
+            counter = 0;
+            document.getElementById('postItCount').innerHTML = counter;
         });
 
         var intervalHandler = setInterval(function () {
@@ -51,7 +53,16 @@ $(document).ready(function() {
     $('#miniGameStart').click(function () {
         $('#miniGameMask').show();
         play();
-        
+        $('#miniGameMask').css("zIndex", "300");
+        setTimeout(function(){
+            $('#miniGameMask').css("zIndex","250");
+        },5000);
+        var x = $("#countdown");
+        setTimeout(function(){ x.text("3") }, 1000);
+        setTimeout(function(){ x.text("2") }, 2000);
+        setTimeout(function(){ x.text("1") }, 3000);
+        setTimeout(function(){ x.text("Start") }, 4000);
+        setTimeout(function(){ x.text(" ") }, 5000);
     });
 });
 
