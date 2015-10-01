@@ -399,7 +399,7 @@ form {
 
 }
 .introPic-1{
-    background-image: url('../images/Zajawka_prawy.png');
+    background-image: url('../images/bulb_on.png');
     background-size: contain !important;
     background-position: center;
     background-repeat: no-repeat !important;
@@ -407,7 +407,7 @@ form {
 
 }
 .introPic-2{
-    background-image: url('../images/Post-it.jpg');
+    background-image: url('../images/bulb_off.png');
     background-size: contain !important;
     background-position: center;
     background-repeat: no-repeat !important;
