@@ -59,8 +59,7 @@ $(document).ready(function(){
 
 /*funkcja do przewijania menu*/
 
-$('#menu').find('a').click(function(){
-    var NavId = $(this).attr('href');
-    $('body').animate({}, 'slow');
-    return false;
+$("#menu").find("a").click(function(){
+    var NavId = $(this).attr("href");
+    $("body").animate({scrollTop: $(NavId).offset().top}, "slow");
 });
