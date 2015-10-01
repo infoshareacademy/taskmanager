@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------------------------------------*/
+
+/*miniGame*/
+
+.postit {
+    width: 180px;
+    height: 150px;
+    z-index: 201;
+    position: absolute;
+    background-image: url("../images/postit.png");
+}
+
+#miniGameMask {
+position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+z-index: 200;
+}
+
+.miniGameBackground {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../images/corkTable.jpg");
+    opacity: 0.8;
+    z-index: 0;
+}
