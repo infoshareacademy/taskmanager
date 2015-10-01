@@ -75,6 +75,7 @@ header {
     height: 60px;
     position: fixed;
     z-index: 103;
+    box-shadow: 5px 0 10px 5px rgba(50, 50, 50, 0.59 ) ;
 }
 
 #NaviBar {
