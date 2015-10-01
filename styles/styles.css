@@ -19,21 +19,21 @@ a:hover {
 }
 
 i {
-
     color: #205081;
-
 }
 
 i:hover {
-
     color: #81D4FA;
+    transform:scale(1.5,1.5);
+    transition: 0.5s    ;
 }
 
  h1 {
-
+    text-align: center;
     color: #0091ea;
     font-size: 40px;
-}
+
+ }
 
  h2, h3, h4, h5 {
      color: #737373;
@@ -57,7 +57,7 @@ i:hover {
 .wrapper {
 
     position: relative;
-    width: auto;
+    width: 1280px;
     min-height: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -155,8 +155,15 @@ form{
     padding-bottom: 20px;
 }
 
-body form li,input{
-    transition: 0.9s all;
+.registration {
+    text-align: center;
+    box-shadow:-5px 0px 30px 0px rgba(50, 50, 50, 0.59);
+    position: fixed;
+    background: #fff;
+    width: 510px;
+    left: 35%;
+    top: 20%;
+    z-index: 101;
 }
 
 input.text {
@@ -229,11 +236,6 @@ form {
     line-height: 5%;
 }
 
-.input {
-    display: block;
-    align-items: center;
-}
-
 #imie {
     width: 75%;
     height:44px;
@@ -283,10 +285,7 @@ form {
     box-sizing: border-box;
     margin: auto;
     min-height: 100%;
-    width: 1286px;
-
-
-}
+    }
 
 .image {
 
@@ -325,8 +324,6 @@ form {
 
 /*funkcjonalnosci*/
 
-
-
 .feature-grid {
 
     margin-top: 50px;
@@ -345,6 +342,17 @@ form {
     width: 25%;
 
 }
+
+.border-between-divs{
+    height: 4em;
+    color: rgba(238, 238, 238, 0);
+    background-image: -webkit-linear-gradient(
+            top,
+            #ffffff 0%,
+            #F6F6F6 47%,
+            #eeeeee 100%);
+}
+
 
 /*------------------------------------------------------------------------------------------------*/
 
