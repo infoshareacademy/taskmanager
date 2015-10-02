@@ -4,7 +4,7 @@
 
 body {
     font: inherit;
-    font-family: "Josefin Sans";
+    font-family: "Josefin Sans", Arial, sans-serif;
     font-size: 100%;
     margin: 0;
     color: #737373;
@@ -19,27 +19,28 @@ a:hover {
 }
 
 i {
-
     color: #205081;
-
 }
 
 i:hover {
-
     color: #81D4FA;
+    transform:scale(1.5,1.5);
+    transition: 0.5s    ;
 }
 
  h1 {
-
+    text-align: center;
     color: #0091ea;
     font-size: 40px;
-}
+
+ }
 
  h2, h3, h4, h5 {
      color: #737373;
  }
 
  h2 {
+     color: #FDFCFB;
      font-size: 25px;
  }
 
@@ -56,7 +57,7 @@ i:hover {
 .wrapper {
 
     position: relative;
-    width: auto;
+    width: 1280px;
     min-height: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -68,12 +69,20 @@ i:hover {
 /*------------------------------------------------------------------------------------------------*/
 /*NaviBar*/
 
-#NaviBar {
-    height: 60px;
-    max-width: 1900px;
-    margin: auto;
+header {
     background-color: #205081;
-    background-size: cover;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 103;
+    box-shadow: 5px 0 10px 5px rgba(50, 50, 50, 0.59 ) ;
+}
+
+#NaviBar {
+    max-width: 1700px;
+    margin: auto;
+
+
 }
 
 #logo {
@@ -115,15 +124,22 @@ ul#menu li a:hover {
 
 /*formularz rejestracyjny*/
 
-#lightboxRegister {
+/*#lightboxRegister {*/
+    /*position: fixed;*/
+    /*background-color: #737373;*/
+    /*opacity: 0.8;*/
+    /*z-index: 0;*/
+/*}*/
+
+.registration {
+    text-align: center;
+    box-shadow:-5px 0 60px 0 rgba(50, 50, 50, 0.59);
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #737373;
-    opacity: 0.8;
-    z-index: 100;
+    background: #fff;
+    width: 510px;
+    left: 35%;
+    top: 20%;
+    z-index: 1;
 }
 
 #cancel {
@@ -137,10 +153,6 @@ form{
     padding-top:10px;
     padding-right: 10px;
     padding-bottom: 20px;
-}
-
-body form li,input{
-    transition: 0.9s all;
 }
 
 .registration {
@@ -224,11 +236,6 @@ form {
     line-height: 5%;
 }
 
-.input {
-    display: block;
-    align-items: center;
-}
-
 #imie {
     width: 75%;
     height:44px;
@@ -276,13 +283,9 @@ form {
 #features_images {
     position: relative;
     box-sizing: border-box;
-    margin-top: 50px;
     margin: auto;
     min-height: 100%;
-    width: 1286px;
-
-
-}
+    }
 
 .image {
 
@@ -320,8 +323,6 @@ form {
 
 /*funkcjonalnosci*/
 
-
-
 .feature-grid {
 
     margin-top: 50px;
@@ -340,6 +341,17 @@ form {
     width: 25%;
 
 }
+
+.border-between-divs{
+    height: 4em;
+    color: rgba(238, 238, 238, 0);
+    background-image: -webkit-linear-gradient(
+            top,
+            #ffffff 0%,
+            #F6F6F6 47%,
+            #eeeeee 100%);
+}
+
 
 /*------------------------------------------------------------------------------------------------*/
 
@@ -368,7 +380,7 @@ form {
 
 #introLeftBox {
     position: absolute;
-    top:0;
+    top: 60px;;
     left: 0;
     bottom: 0;
     right: 50%;
@@ -381,7 +393,7 @@ form {
 
 #introRightBox{
     position: absolute;
-    top:0;
+    top:60px;
     left: 50%;
     bottom: 0;
     right: 0;
@@ -409,7 +421,7 @@ form {
 
 
 }
-#zajawka-lewy h1{
+#zajawka-lewy h1 {
     text-align: center;
     margin-top: 100px;
     margin-right: 100px;
@@ -417,7 +429,7 @@ form {
     color: white;
 }
 
-#zajawka-lewy h2{
+#zajawka-lewy h2 {
     text-align: center;
     margin-top: 40px;
     margin-right: 100px;
@@ -425,29 +437,6 @@ form {
     margin-left: 100px;
     color: white;
 }
-
-
-/*Animacja - zajawka */
-/*#zajawka-prawy {*/
-    /*position:relative;*/
-    /*height:281px;*/
-    /*width:450px;*/
-    /*margin:0 auto;*/
-    /*background-size: contain !important;*/
-/*}*/
-/*#zajawka-prawy img {*/
-    /*position:absolute;*/
-    /*transition: opacity 1s ease-in-out;*/
-/*}*/
-
-/*#zajawka-prawy img.transparent {*/
-    /*opacity:0;*/
-/*}*/
-
-
-
-
-
 
 /*------------------------------------------------------------------------------------------------*/
 

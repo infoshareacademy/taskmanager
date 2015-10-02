@@ -16,28 +16,13 @@
 </head>
 <body>
 
-<form class="registration">
-        <i id="cancel" class="fa fa-times"></i>
-        <p>Zarejestruj się</p>
-        <div class="form-info">
-            <label for="name"><input type="text" class="text" value="Imię" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imie';}" ></label>
-            <label for="e-mail"><input type="text" class="text" value="Twoj email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Twoj email';}" ></label>
-            <label for="user-name"><input type="text" class="text" value="Nazwa użytkownika" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nazwa użytkownika';}" ></label>
-            <label for="password"><input type="password" value="Hasło" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Hasło';}"></label>
-        </div>
-        <input type="submit" value="Zapisz sie">
-</form>
-
-</div>
-<div id="lightboxRegister"></div>
-
 <header>
     <div id="NaviBar">
         <img id="logo" src="images/logo_pp.png" alt="logo Pied Piper">
         <ul id="menu">
-            <li><a href="#funkcje">FUNKCJE</a></li>
-            <li><a href="#funkcje">SZCZEGÓŁY</a></li>
-            <li><a href="#funkcje">SOCIAL MEDIA</a></li>
+            <li><a href="#1">FUNKCJE</a></li>
+            <li><a href="#footer">SZCZEGÓŁY</a></li>
+            <li><a href="">SOCIAL MEDIA</a></li>
         </ul>
         <button id="buttonHeader" class="submit" type="button">ZAPISZ SIĘ</button>
     </div>
@@ -45,27 +30,17 @@
 </header>
 
 
-<section>
-
-    <div id="intro">
+<section id="intro">
 
         <div id="introMiddleBox" class="default-width">
 
-        <div id="introLeftBox">
+            <div id="introLeftBox">
             <h1>TASKie - organization of work becomes your hobby</h1>
-            <h2>TASKie is an exception among the tools made for planning, project management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
+            <h2>TASKie is an exception among the tools made for planning, project   management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
+            </div>
+
+            <div id="introRightBox" class ="introPic-1"></div>
         </div>
-
-        <div id="introRightBox" class ="introPic-1">
-        </div>
-
-
-    </div>
-
-
-
-    </div>
-
 </section>
 
 <div class="wrapper">
@@ -91,44 +66,44 @@
     </section>
 
     <section>
+        <div class="border-between-divs">
+            <h1> Poznaj funcjonalności.</h1>
+        </div>
         <div class="feature-grid">
-
-            <h1 style=" color: #737373"> Poznaj funcjonalności.</h1>
-
-            <div class="features-item">
-                <i class="fa fa-folder-o fa-5x"></i>
-                <h3>Foldery</h3>
-                <p>grupuj wszystkie listy w łatwo dostępnych folderach.</p>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-folder-o fa-4x"></i>
+                <p>Foldery</p>
+                <p>Grupuj wszystkie swoje listy w łatwo dostępnych folderach i lokacjach.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-list-ul fa-5x"></i>
-                <h3>Listy</h3>
-                <p>Dodawaj swoje listy, abyś już nigdy o niczym nie zapomniał</p>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-list-ul fa-4x"></i>
+                <p>Listy</p>
+                <p>Dodawaj swoje listy, abyś już nigdy o niczym nie zapomniał i miał je zawsze przy sobie</p>
             </div>
 
 
-            <div class="features-item">
-                <i class="fa fa-sticky-note-o fa-5x"></i>
-                <h3>Notatki</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-sticky-note-o fa-4x"></i>
+                <p>Notatki</p>
                 <p>Dodawaj notatki do swoich zadań i bądź pewny, że nie zapomnisz o żadnym swoim pomyśle.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-calendar-times-o fa-5x"></i>
-                <h3>Daty</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-calendar-times-o fa-4x"></i>
+                <p>Daty</p>
                 <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-calendar-times-o fa-5x"></i>
-                <h3>Daty</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-calendar-times-o fa-4x"></i>
+                <p>Daty</p>
                 <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-calendar-times-o fa-5x"></i>
-                <h3>Daty</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-calendar-times-o fa-4x"></i>
+                <p>Daty</p>
                 <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
             </div>
         </div>
@@ -163,69 +138,32 @@
     <span>&copy; Pied Piper 2015</span><br>
 </footer>
 
+<!--Formularz rejestracyjny-->
 
+<div id="lightboxRegister">
 
-<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <form class="registration">
+        <i id="cancel" class="fa fa-times"></i>
+        <p>Zarejestruj się</p>
+        <div class="form-info">
+            <input type="text" name="name" placeholder="name" class="text">
+            <input type="text" name="email" placeholder="email" class="text">
+            <input type="text" name="userName" placeholder="userName" class="text">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <input type="submit" value="Zapisz sie">
+    </form>
+</div>
 
+<!--Koniec formularza rejestracyjnego-->
 
-<script>
-
-    function clickfcn(){
-        //console.log(12);
-            $('.thank_you').show();
-        $('#newsletter').submit();
-    }
-
-    $(document).ready(function () {
-        $('.thank_you').hide();
-        $('#zapisz_sie').click(clickfcn());
-    });
-
-    $(document).ready(function(){
-            $('#icancel').click(function(){
-                $('#formularz').hide(function(){
-                    $(this).animate({
-                    },2000)
-                });
-            });
-    });
-
-    $(document).ready(function(){
-        $('#cancel').click(function(){
-            $('.registration').hide(function(){
-                $(this).animate({
-                },2000)
-            });
-            $('#lightbox').hide(function(){
-                $(this).animate({
-                },2000)
-            });
-        });
-    });
-
-    $('.registration').hide();
-    $('#lightbox').hide();
-
-    $(document).ready(function(){
-        $('#zapisz_header').click(function(){
-            $('.registration').show(function(){
-                $(this).animate({
-                },2000)
-            });
-            $('#lightbox').show(function(){
-                $(this).animate({
-                },2000)
-            });
-        });
-    });
-
-</script>
 
 <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
 
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 <script src="js/tomek.js"></script>
 <script src="js/kuba.js"></script>
 </body>
