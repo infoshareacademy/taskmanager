@@ -14,15 +14,15 @@
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
 
 </head>
-<body>
+<body id="top">
 
 <header>
     <div id="NaviBar">
         <img id="logo" src="images/logo_pp.png" alt="logo Pied Piper">
         <ul id="menu">
-            <li><a href="#1">FUNKCJE</a></li>
-            <li><a href="#footer">SZCZEGÓŁY</a></li>
-            <li><a href="">SOCIAL MEDIA</a></li>
+            <li class="active"><a href="#top">FUNKCJE</a></li>
+            <li><a href="#features_images">SZCZEGÓŁY</a></li>
+            <li><a href="#feature-grid">SOCIAL MEDIA</a></li>
         </ul>
         <button id="buttonHeader" class="submit" type="button">ZAPISZ SIĘ</button>
     </div>
@@ -63,11 +63,16 @@
             <img src="images/feature_image_2.png" alt="">
         </div>
     </section>
+</div>
+
+<div class="border-between-divs">
+    <h1> Poznaj funcjonalności.</h1>
+</div>
+
+<div class="wrapper">
     <section>
-        <div class="border-between-divs">
-            <h1> Poznaj funcjonalności.</h1>
-        </div>
-        <div class="feature-grid">
+
+        <div class="feature-grid" id="feature-grid">
             <div class="features-item hvr-shutter-in-vertical">
                 <i class="fa fa-folder-o fa-4x"></i>
                 <p>Foldery</p>
@@ -138,8 +143,6 @@
 
 <!--Formularz rejestracyjny-->
 
-<div id="lightboxRegister">
-
     <form class="registration">
         <i id="cancel" class="fa fa-times"></i>
         <p>Zarejestruj się</p>
@@ -150,8 +153,8 @@
             <input type="password" name="password" placeholder="password">
         </div>
         <input type="submit" value="Zapisz sie">
+        <div id="lightboxRegister"></div>
     </form>
-</div>
 
 <!--Koniec formularza rejestracyjnego-->
 
