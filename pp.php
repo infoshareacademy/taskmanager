@@ -1,6 +1,6 @@
 <?php
 if (empty($_POST['imie'] && $_POST['email'])) {
-    echo 'Musisz wypelnic wszystkie pola!';
+    echo 'Error: Musisz wypelnic wszystkie pola!';
 
 
 } else {
@@ -15,7 +15,7 @@ if (empty($_POST['imie'] && $_POST['email'])) {
     $emailExist = mysqli_fetch_array($emailDB, MYSQLI_NUM);
 
     if ($emailExist[0] > 1) {
-        echo "Twoj email znajduje sie juz w bazie, nie zostales ponownie dodany";
+        echo "Error: Twoj email znajduje sie juz w bazie, nie zostales ponownie dodany";
         mysqli_close($conn);
     } else {
         $insertQuery = "INSERT INTO `tabela_newsletter`(`ID`, `imie`, `email`) VALUES (NULL,'" . $_POST['imie'] . "','" . $_POST['email'] . "')";
@@ -25,12 +25,8 @@ if (empty($_POST['imie'] && $_POST['email'])) {
             mysqli_query($conn, $insertQuery);
             mysqli_close($conn);
             echo "Dziekujemy za zgloszenie do newslettera!
-                  Zostales zarejestrowany i będziesz otrzymywał nasze wiadomosci
-                  Twoje dane:
-                    <ul>
-                        <li>Imie:$_POST[imie];</li>
-                        <li>Adres email: $_POST[email];</li>
-                    </ul>";
+                  Zostales zarejestrowany i będziesz otrzymywał nasze wiadomosci";
+
         }
 
     }

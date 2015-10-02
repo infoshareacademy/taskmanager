@@ -16,7 +16,7 @@ setInterval(changePic,1500);
 
 
 $(function () {
-    $('#lightboxRegister').hide();
+    //$('#lightboxRegister').hide();
 
 
     $('#newsletter').on('submit',function (event) {
@@ -28,16 +28,17 @@ $(function () {
         $inputs.each(function() {
             values[this.name] = $(this).val();
         });
-        var $logInStatusContainer = $('#submit-status');
+        var $newsletterBox = $('#submit-status');
 
-        // get users.json to lookup for username and password
         $.post('/taskmanager/pp.php', values,function (message) {
+           if (!message.match('Error: ')){
+               $('#newsletter').hide();
+           }
+            $newsletterBox.text(message);
 
-                $logInStatusContainer.append(message);
         });
-        $logInStatusContainer.append('Checking...');
+        $newsletterBox.text('Checking...');
 
-        //console.log(values);
 
         return false;
     });
