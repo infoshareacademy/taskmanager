@@ -13,15 +13,17 @@ function formvalidation(){
 
 
 
-    function clickfcn(){
-        //console.log(12);
-        $('.thank_you').show();
-        $('#newsletter').submit();
-    }
+    //function clickfcn(){
+    //    //console.log(12);
+    //    $('.thank_you').show();
+    //    $('#newsletter').submit();
+    //}
 
 $(document).ready(function () {
     $('.thank_you').hide();
-    $('#zapisz_sie').click(clickfcn());
+    $('.thank_you').show();
+
+    //$('#zapisz_sie').click(clickfcn());
 });
 
 $(document).ready(function(){
