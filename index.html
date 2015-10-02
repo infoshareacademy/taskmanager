@@ -9,6 +9,7 @@
     <title>Pied Piper TASKie</title>
     <link rel="shortcut icon" href="" type="" />
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/miniGame.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
@@ -24,6 +25,7 @@
             <li><a href="#footer">SZCZEGÓŁY</a></li>
             <li><a href="">SOCIAL MEDIA</a></li>
         </ul>
+        <button id="miniGameStart" class="submit" type="button">MINI GRA</button>
         <button id="buttonHeader" class="submit" type="button">ZAPISZ SIĘ</button>
     </div>
 
@@ -157,13 +159,17 @@
 
 <!--Początek miniGame-->
 
-<button id="startGame">Minigra</button>
+<div id="miniGameMask">
 
-<div id="endGame">
-    <button id="stopInterval">Awaryjne przerwanie gry</button>
-    <p>Ile karteczek potrzebowałeś do zakończenia gry?</p>
-    <p id="postItCount"></p>
+    <div id="endGame">
+        <button id="stopInterval">Przerwij grę</button>
+        <span class="postItCount">Wyświetlonych karteczek: </span>
+        <span class="postItCount" id="postItCount"></span>
+        <p id="countdown"></p>
+    </div>
 </div>
+
+
 
 <!--Koniec miniGame-->
 
