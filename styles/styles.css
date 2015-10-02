@@ -19,27 +19,28 @@ a:hover {
 }
 
 i {
-
     color: #205081;
-
 }
 
 i:hover {
-
     color: #81D4FA;
+    transform:scale(1.5,1.5);
+    transition: 0.5s    ;
 }
 
  h1 {
-
+    text-align: center;
     color: #0091ea;
     font-size: 40px;
-}
+
+ }
 
  h2, h3, h4, h5 {
      color: #737373;
  }
 
  h2 {
+     color: #FDFCFB;
      font-size: 25px;
  }
 
@@ -56,7 +57,7 @@ i:hover {
 .wrapper {
 
     position: relative;
-    width: auto;
+    width: 1280px;
     min-height: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -74,6 +75,7 @@ header {
     height: 60px;
     position: fixed;
     z-index: 103;
+    box-shadow: 5px 0 10px 5px rgba(50, 50, 50, 0.59 ) ;
 }
 
 #NaviBar {
@@ -122,15 +124,22 @@ ul#menu li a:hover {
 
 /*formularz rejestracyjny*/
 
-#lightboxRegister {
+/*#lightboxRegister {*/
+    /*position: fixed;*/
+    /*background-color: #737373;*/
+    /*opacity: 0.8;*/
+    /*z-index: 0;*/
+/*}*/
+
+.registration {
+    text-align: center;
+    box-shadow:-5px 0 60px 0 rgba(50, 50, 50, 0.59);
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #737373;
-    opacity: 0.8;
-    z-index: 100;
+    background: #fff;
+    width: 510px;
+    left: 35%;
+    top: 20%;
+    z-index: 1;
 }
 
 #cancel {
@@ -144,10 +153,6 @@ form{
     padding-top:10px;
     padding-right: 10px;
     padding-bottom: 20px;
-}
-
-body form li,input{
-    transition: 0.9s all;
 }
 
 .registration {
@@ -231,11 +236,6 @@ form {
     line-height: 5%;
 }
 
-.input {
-    display: block;
-    align-items: center;
-}
-
 #imie {
     width: 75%;
     height:44px;
@@ -287,10 +287,7 @@ form {
     box-sizing: border-box;
     margin: auto;
     min-height: 100%;
-    width: 1286px;
-
-
-}
+    }
 
 .image {
 
@@ -329,8 +326,6 @@ form {
 
 /*funkcjonalnosci*/
 
-
-
 .feature-grid {
 
     margin-top: 50px;
@@ -349,6 +344,17 @@ form {
     width: 25%;
 
 }
+
+.border-between-divs{
+    height: 4em;
+    color: rgba(238, 238, 238, 0);
+    background-image: -webkit-linear-gradient(
+            top,
+            #ffffff 0%,
+            #F6F6F6 47%,
+            #eeeeee 100%);
+}
+
 
 /*------------------------------------------------------------------------------------------------*/
 
