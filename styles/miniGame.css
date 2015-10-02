@@ -1,0 +1,53 @@
+/*------------------------------------------------------------------------------------------------*/
+
+/*miniGame*/
+
+.postit {
+    width: 180px;
+    height: 150px;
+    z-index: 260;
+    position: absolute;
+    background-image: url("../images/postit.png");
+    background-size: cover;
+}
+
+#miniGameMask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-image: url("../images/corkTable.jpg");
+    /*opacity: 0.9;*/
+
+}
+
+.postItCount {
+    color: white;
+    margin: auto;
+    font-size: 4em;
+}
+
+#stopInterval {
+    float: right;
+    background-color: gold;
+    display: block;
+    color: white;
+    font-size: 3em;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    border: solid 2px white;
+}
+
+#endGame {
+    position: relative;
+    z-index: 202;
+}
+
+#countdown {
+    font-size: 15em;
+    color: white;
+    text-align: center;
+}
+

@@ -371,6 +371,7 @@ form {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 #introMiddleBox {
 
@@ -475,3 +476,44 @@ form {
 
 
 /*------------------------------------------------------------------------------------------------*/
+
+/*Parallax*/
+
+#parallaxBackground {
+    width: 100%;
+    height: 500px;
+    background: url("../images/blurBackgroundMotto.jpg") no-repeat;
+    box-shadow: inset 0 0 20px #000;
+}
+
+#taskKiller {
+    color: white;
+    font-size: 10em;
+    text-align: center;
+    padding-top: 150px;
+    margin: 0;
+}
+
+#textNinja {
+    color: white;
+    font-size: 3.4em;
+    text-align: center;
+    margin: 0;
+}
+
+#miniGameStart {
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    display: block;
+    background-color: #0091ea;
+    color: white;
+    margin: 20px auto 0 auto;
+    font-size: 1em;
+}
+
+#miniGameStart:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
