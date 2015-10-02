@@ -11,5 +11,17 @@ function changePic() {
     }
 }
 
-
 setInterval(changePic,1500);
+
+$(document).ready(function(){
+    var parallaxImage = document.getElementById('parallaxBackground');
+    
+
+
+    $(window).scroll(function () {
+        var imageOffset = $(parallaxImage).offset().top - (window.innerHeight - parallaxImage.clientHeight)/2;
+        var scroll = $(window).scrollTop();
+        parallaxImage.style.backgroundPositionY= -300 + (imageOffset - scroll)/4 + 'px';
+    });
+
+});
