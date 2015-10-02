@@ -8,17 +8,6 @@ function formvalidation(){
     }
 }
 
-
-
-
-
-
-    //function clickfcn(){
-    //    //console.log(12);
-    //    $('.thank_you').show();
-    //    $('#newsletter').submit();
-    //}
-
 $(document).ready(function () {
     $('.thank_you').hide();
     $('.thank_you').show();
