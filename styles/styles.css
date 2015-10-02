@@ -75,7 +75,7 @@ header {
     height: 60px;
     position: fixed;
     z-index: 103;
-    box-shadow: 5px 0 10px 5px rgba(50, 50, 50, 0.59 ) ;
+    box-shadow: 0 5px 20px 5px rgba(0,0,0, 0.7);
 }
 
 #NaviBar {
@@ -108,9 +108,11 @@ ul#menu li a {
     text-decoration: none;
 }
 
-ul#menu li a:hover {
+ul#menu li a:hover,
+ul#menu li.active a {
     color: #E86C8D;
 }
+
 
 #buttonHeader {
 
@@ -124,22 +126,11 @@ ul#menu li a:hover {
 
 /*formularz rejestracyjny*/
 
-/*#lightboxRegister {*/
-    /*position: fixed;*/
-    /*background-color: #737373;*/
-    /*opacity: 0.8;*/
-    /*z-index: 0;*/
-/*}*/
-
-.registration {
-    text-align: center;
-    box-shadow:-5px 0 60px 0 rgba(50, 50, 50, 0.59);
-    position: fixed;
-    background: #fff;
-    width: 510px;
-    left: 35%;
-    top: 20%;
-    z-index: 1;
+#lightboxRegister {
+    position: relative;
+    background-color: #737373;
+    opacity: 0.8;
+    z-index: 0;
 }
 
 #cancel {
@@ -344,6 +335,7 @@ form {
 }
 
 .border-between-divs{
+    width: auto;
     height: 4em;
     color: rgba(238, 238, 238, 0);
     background-image: -webkit-linear-gradient(
