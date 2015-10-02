@@ -501,7 +501,7 @@ form {
     margin: 0;
 }
 
-#miniGame {
+#miniGameStart {
     width: 250px;
     height: 60px;
     border-radius: 5px;
@@ -512,7 +512,7 @@ form {
     font-size: 1em;
 }
 
-#miniGame:hover {
+#miniGameStart:hover {
     background-color: red;
     color: white;
     cursor: pointer;

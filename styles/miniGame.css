@@ -51,19 +51,3 @@
     text-align: center;
 }
 
-#miniGameStart {
-    width: 150px;
-    height: 42px;
-    border-radius: 5px;
-    display: block;
-    float: right;
-    margin: 10px 50px 10px 0;
-    background-color: #0091ea;
-    color: white;
-}
-
-#miniGameStart:hover {
-    background-color: #e3e3e3;
-    color: #0091ea;
-    cursor: pointer;
-}
