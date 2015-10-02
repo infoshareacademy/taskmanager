@@ -16,6 +16,9 @@ setInterval(changePic,1500);
 
 
 $(function () {
+    $('#lightboxRegister').hide();
+
+
     $('#newsletter').on('submit',function (event) {
         var $form = $(this);
         // get all the inputs into an array.
@@ -30,9 +33,9 @@ $(function () {
         // get users.json to lookup for username and password
         $.post('/taskmanager/pp.php', values,function (message) {
 
-                $logInStatusContainer.text(message);
+                $logInStatusContainer.append(message);
         });
-        $logInStatusContainer.text('Checking...');
+        $logInStatusContainer.append('Checking...');
 
         //console.log(values);
 
