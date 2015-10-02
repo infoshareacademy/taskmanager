@@ -10,38 +10,46 @@
     <link rel="shortcut icon" href="" type="" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/miniGame.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+
 </head>
-<body>
+<body id="top">
 
 <header>
     <div id="NaviBar">
         <img id="logo" src="images/logo_pp.png" alt="logo Pied Piper">
         <ul id="menu">
-            <li><a href="#1">FUNKCJE</a></li>
-            <li><a href="#footer">SZCZEGÓŁY</a></li>
-            <li><a href="">SOCIAL MEDIA</a></li>
+            <li class="active"><a href="#top">FUNKCJE</a></li>
+            <li><a href="#features_images">SZCZEGÓŁY</a></li>
+            <li><a href="#feature-grid">SOCIAL MEDIA</a></li>
         </ul>
         <button id="buttonHeader" class="submit" type="button">ZAPISZ SIĘ</button>
     </div>
 
 </header>
 
-
 <section id="intro">
 
-        <div id="introMiddleBox" class="default-width">
+    <div id="introMiddleBox" class="default-width">
 
-            <div id="introLeftBox">
+        <div id="introLeftBox">
             <h1>TASKie - organization of work becomes your hobby</h1>
             <h2>TASKie is an exception among the tools made for planning, project   management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
-            </div>
-
-            <div id="introRightBox" class ="introPic-1"></div>
         </div>
+
+        <div id="introRightBox" class ="introPic-1"></div>
+    </div>
 </section>
+
+<section id="parallaxBackground">
+    <p id="taskKiller">TASK KILLER</p>
+    <p id="textNinja">Zostań wojownikiem ninja dla swoich zadań</p>
+    <button id="miniGameStart">ROZPOCZNIJ POJEDYNEK</button>
+</section>
+
 
 <div class="wrapper">
     <section id="features_images">
@@ -62,14 +70,22 @@
 
         <div class="image wow animated bounceInUp">
             <img src="images/feature_image_2.png">
+
+
+        <div class="image">
+            <img src="images/feature_image_2.png" alt="">
         </div>
     </section>
+</div>
 
+<div class="border-between-divs">
+    <h1> Poznaj funcjonalności.</h1>
+</div>
+
+<div class="wrapper">
     <section>
-        <div class="border-between-divs">
-            <h1> Poznaj funcjonalności.</h1>
-        </div>
-        <div class="feature-grid">
+
+        <div class="feature-grid" id="feature-grid">
             <div class="features-item hvr-shutter-in-vertical">
                 <i class="fa fa-folder-o fa-4x"></i>
                 <p>Foldery</p>
@@ -110,6 +126,7 @@
     </section>
 </div>
 
+
 <section id="formularz">
     <form id="newsletter" action="pp.php" method="post">
 
@@ -125,10 +142,8 @@
             <input type="text" class="submit" id="email" name="email" placeholder="Twój email">
             <input type="submit" class="submit" id="zapisz_sie" name="submit" value="Zapisz się">
         </div>
-        <div class="thank_you">
-            <p>Dziękujemy za zapisanie się</p>
-        </div>
     </form>
+    <div id="submit-status"></div>
 </section>
 
 <footer id="footer">
@@ -140,8 +155,6 @@
 
 <!--Formularz rejestracyjny-->
 
-<div id="lightboxRegister">
-
     <form class="registration">
         <i id="cancel" class="fa fa-times"></i>
         <p>Zarejestruj się</p>
@@ -152,19 +165,37 @@
             <input type="password" name="password" placeholder="password">
         </div>
         <input type="submit" value="Zapisz sie">
+        <div id="lightboxRegister"></div>
     </form>
-</div>
 
 <!--Koniec formularza rejestracyjnego-->
 
+<!--Początek miniGame-->
 
+<div id="miniGameMask">
 <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
 
+    <div id="endGame">
+        <button id="stopInterval">Przerwij grę</button>
+        <span class="postItCount">Wyświetlonych karteczek: </span>
+        <span class="postItCount" id="postItCount"></span>
+        <p id="countdown"></p>
+    </div>
+</div>
+
+
+
+<!--Koniec miniGame-->
+
+
+
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 <script src="js/tomek.js"></script>
 <script src="js/kuba.js"></script>
+<script src="js/miniGame.js"></script>
+
 </body>
 </html>

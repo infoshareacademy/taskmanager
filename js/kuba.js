@@ -8,15 +8,11 @@ function formvalidation(){
     }
 }
 
-    function clickfcn(){
-        //console.log(12);
-        $('.thank_you').show();
-        $('#newsletter').submit();
-    }
-
 $(document).ready(function () {
     $('.thank_you').hide();
-    $('#zapisz_sie').click(clickfcn());
+    $('.thank_you').show();
+
+    //$('#zapisz_sie').click(clickfcn());
 });
 
 $(document).ready(function(){
@@ -59,7 +55,55 @@ $(document).ready(function(){
 
 /*funkcja do przewijania menu*/
 
-$("#menu").find("a").click(function(){
-    var NavId = $(this).attr("href");
-    $("body").animate({scrollTop: $(NavId).offset().top}, "slow");
+$(function() {
+    var scrollToAnchor = function( id ) {
+       var elem = $(id);
+        $('html, body').animate({
+            scrollTop: elem.offset().top
+        }, 1000 );
+    };
+
+    $("a").click(function( event ) {
+        if ( $(this).attr("href").match("#") ) {
+            event.preventDefault();
+            var href = $(this).attr('href');
+            scrollToAnchor( href );
+        }
+    });
+});
+
+
+// Cache selectors
+var lastId,
+    topMenu = $("#menu"),
+    topMenuHeight = topMenu.outerHeight()+15,
+// All list items
+    menuItems = topMenu.find("a"),
+// Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+
+// Bind to scroll
+$(window).scroll(function(){
+    // Get container scroll position
+    var fromTop = $(this).scrollTop()+topMenuHeight;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function(){
+        if ($(this).offset().top < fromTop)
+            return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[href=#"+id+"]").parent().addClass("active");
+    }
 });
