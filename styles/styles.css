@@ -469,3 +469,43 @@ form {
 
 
 /*------------------------------------------------------------------------------------------------*/
+
+/*Parallax*/
+
+#parallaxBackground {
+    width: 100%;
+    height: 500px;
+    background: url("../images/blurBackgroundMotto.jpg") no-repeat;
+}
+
+#taskKiller {
+    color: white;
+    font-size: 10em;
+    text-align: center;
+    padding-top: 150px;
+    margin: 0;
+}
+
+#textNinja {
+    color: white;
+    font-size: 3.4em;
+    text-align: center;
+    margin: 0;
+}
+
+#miniGame {
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    display: block;
+    background-color: #0091ea;
+    color: white;
+    margin: 20px auto 0 auto;
+    font-size: 1em;
+}
+
+#miniGame:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
