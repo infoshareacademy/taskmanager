@@ -11,11 +11,17 @@ function changePic() {
     }
 }
 
-
 setInterval(changePic,1500);
 
-$(window).scroll(function () {
-    var imageOffset = $(introPic).offset().top - (window.innerHeight - introPic.clientHeight)/2;
-    var scroll = $(window).scrollTop();
-    introPic.style.backgroundPositionY= (imageOffset - scroll)/2 + 'px';
+$(document).ready(function(){
+    var parallaxImage = document.getElementById('parallaxBackground');
+    
+
+
+    $(window).scroll(function () {
+        var imageOffset = $(parallaxImage).offset().top - (window.innerHeight - parallaxImage.clientHeight)/2;
+        var scroll = $(window).scrollTop();
+        parallaxImage.style.backgroundPositionY= -300 + (imageOffset - scroll)/4 + 'px';
+    });
+
 });
