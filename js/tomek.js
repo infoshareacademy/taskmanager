@@ -1,5 +1,5 @@
 var introPic = document.getElementById('introRightBox');
-//zajawkapr.addEventListener('click', changePic);
+zajawkapr.addEventListener('click', changePic);
 
 function changePic() {
     if (introPic.className == "introPic-2") {
@@ -12,7 +12,7 @@ function changePic() {
 }
 
 
-setInterval(changePic,1500);
+//setInterval(changePic,1500);
 
 
 $(function () {
