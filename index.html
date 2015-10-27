@@ -9,131 +9,122 @@
     <title>Pied Piper TASKie</title>
     <link rel="shortcut icon" href="" type="" />
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/miniGame.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
 
 </head>
-<body>
-
-<form class="registration">
-        <i id="cancel" class="fa fa-times"></i>
-        <p>Zarejestruj się</p>
-        <div class="form-info">
-            <label for="name"><input type="text" class="text" value="Imię" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imie';}" ></label>
-            <label for="e-mail"><input type="text" class="text" value="Twoj email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Twoj email';}" ></label>
-            <label for="user-name"><input type="text" class="text" value="Nazwa użytkownika" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nazwa użytkownika';}" ></label>
-            <label for="password"><input type="password" value="Hasło" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Hasło';}"></label>
-        </div>
-        <input type="submit" value="Zapisz sie">
-</form>
-
-</div>
-<div id="lightboxRegister"></div>
+<body id="top">
 
 <header>
-    <div id="NaviBar">
+    <div class="wow animated slideInDown" id="NaviBar">
         <img id="logo" src="images/logo_pp.png" alt="logo Pied Piper">
         <ul id="menu">
-            <li><a href="#funkcje">FUNKCJE</a></li>
-            <li><a href="#funkcje">SZCZEGÓŁY</a></li>
-            <li><a href="#funkcje">SOCIAL MEDIA</a></li>
+            <li class="active"><a href="#top">FUNKCJE</a></li>
+            <li><a href="#features_images">SZCZEGÓŁY</a></li>
+            <li><a href="#feature-grid">SOCIAL MEDIA</a></li>
         </ul>
         <button id="buttonHeader" class="submit" type="button">ZAPISZ SIĘ</button>
     </div>
 
 </header>
 
+<section class="wow animated fadeIn" id="intro">
 
-<section>
+    <div id="introMiddleBox" class="default-width">
 
-    <div id="intro">
-
-        <div id="introMiddleBox" class="default-width">
-
-        <div id="introLeftBox">
+        <div class="wow animated fadeInLeft" id="introLeftBox">
             <h1>TASKie - organization of work becomes your hobby</h1>
-            <h2>TASKie is an exception among the tools made for planning, project management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
+            <h2>TASKie is an exception among the tools made for planning, project   management and load optimization. TASKie is a smart visualization system that make it nice to organize your work. </h2>
         </div>
 
-        <div id="introRightBox" class ="introPic-1">
-        </div>
-
-
+        <div id="introRightBox" class ="introPic-1"></div>
     </div>
-
-
-
-    </div>
-
 </section>
+
+<section class="wow animated fadeInRightBig" id="parallaxBackground">
+    <p id="taskKiller">TASK KILLER</p>
+    <p id="textNinja">Zostań wojownikiem ninja dla swoich zadań</p>
+    <button class="wow animated flip" id="miniGameStart">ROZPOCZNIJ POJEDYNEK</button>
+</section>
+
 
 <div class="wrapper">
     <section id="features_images">
-        <div class="image">
+
+        <div class="image wow animated bounceInUp">
             <img src="images/feature_image_1.png">
         </div>
 
-        <div class="image_text">
+        <div class="image_text wow animated fadeInRightBig">
             <h1>Team work made simple</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis dui viverra, pulvinar mauris sed, venenatis lorem. Cras euismod molestie lobortis. Vestibulum consectetur lectus id nunc porttitor maximus. Sed nunc nunc, finibus et ligula vitae, viverra commodo felis. Pellentesque ac porttitor quam. </p>
         </div>
 
-        <div class="image_text_lewy">
+        <div class="image_text_lewy wow animated bounceInUp">
             <h1>Organize your work in one place</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis dui viverra, pulvinar mauris sed, venenatis lorem. Cras euismod molestie lobortis. Vestibulum consectetur lectus id nunc porttitor maximus. Sed nunc nunc, finibus et ligula vitae, viverra commodo felis. Pellentesque ac porttitor quam. </p>
         </div>
 
-        <div class="image">
+        <div class="image wow animated bounceInUp">
             <img src="images/feature_image_2.png">
+
         </div>
     </section>
+</div>
+
+<div class="border-between-divs">
+    <h1 class ='wow animated slideInUp'> Poznaj funcjonalności.</h1>
+</div>
+
+<div class="wrapper">
     <section>
-        <div class="feature-grid">
 
-            <h1 style=" color: #737373"> Poznaj funcjonalności.</h1>
-
-            <div class="features-item">
-                <i class="fa fa-folder-o fa-5x"></i>
-                <h3>Foldery</h3>
-                <p>grupuj wszystkie listy w łatwo dostępnych folderach.</p>
+        <div class="feature-grid wow animated bounceInUp" id="feature-grid">
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-folder-o fa-4x"></i>
+                <p>Foldery</p>
+                <p>Grupuj wszystkie swoje listy w łatwo dostępnych folderach i lokacjach.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-list-ul fa-5x"></i>
-                <h3>Listy</h3>
-                <p>Dodawaj swoje listy, abyś już nigdy o niczym nie zapomniał</p>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-list-ul fa-4x"></i>
+                <p>Listy</p>
+                <p>Dodawaj swoje listy, abyś już nigdy o niczym nie zapomniał i miał je zawsze przy sobie</p>
             </div>
 
 
-            <div class="features-item">
-                <i class="fa fa-sticky-note-o fa-5x"></i>
-                <h3>Notatki</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-sticky-note-o fa-4x"></i>
+                <p>Notatki</p>
                 <p>Dodawaj notatki do swoich zadań i bądź pewny, że nie zapomnisz o żadnym swoim pomyśle.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-calendar-times-o fa-5x"></i>
-                <h3>Daty</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-calendar-times-o fa-4x"></i>
+                <p>Daty</p>
                 <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-calendar-times-o fa-5x"></i>
-                <h3>Daty</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-calendar-times-o fa-4x"></i>
+                <p>Daty</p>
                 <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
             </div>
 
-            <div class="features-item">
-                <i class="fa fa-calendar-times-o fa-5x"></i>
-                <h3>Daty</h3>
+            <div class="features-item hvr-shutter-in-vertical">
+                <i class="fa fa-calendar-times-o fa-4x"></i>
+                <p>Daty</p>
                 <p>Dodawaj deadline'y do swoich zadań i upewnij się, że wszystko zrobione ejst na czas.</p>
             </div>
         </div>
     </section>
 </div>
 
-<section id="formularz">
+
+<section class="wow animated slideInRight" id="formularz">
     <form id="newsletter" action="pp.php" method="post">
 
         <i id="icancel" class="fa fa-times"></i>
@@ -148,10 +139,8 @@
             <input type="text" class="submit" id="email" name="email" placeholder="Twój email">
             <input type="submit" class="submit" id="zapisz_sie" name="submit" value="Zapisz się">
         </div>
-        <div class="thank_you">
-            <p>Dziękujemy za zapisanie się</p>
-        </div>
     </form>
+    <div id="submit-status"></div>
 </section>
 
 <footer id="footer">
@@ -161,65 +150,49 @@
     <span>&copy; Pied Piper 2015</span><br>
 </footer>
 
+<!--Formularz rejestracyjny-->
+
+    <form class="registration">
+        <i id="cancel" class="fa fa-times"></i>
+        <p>Zarejestruj się</p>
+        <div class="form-info">
+            <input type="text" name="name" placeholder="name" class="text">
+            <input type="text" name="email" placeholder="email" class="text">
+            <input type="text" name="userName" placeholder="userName" class="text">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <input type="submit" value="Zapisz sie">
+        <div id="lightboxRegister"></div>
+    </form>
+
+<!--Koniec formularza rejestracyjnego-->
+
+<!--Początek miniGame-->
+
+<div id="miniGameMask">
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+    <div id="endGame">
+        <button id="stopInterval">Przerwij grę</button>
+        <span class="postItCount">Wyświetlonych karteczek: </span>
+        <span class="postItCount" id="postItCount"></span>
+        <p id="countdown"></p>
+    </div>
+</div>
+
+
+
+<!--Koniec miniGame-->
+
 
 
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-
-
-<script>
-
-    function clickfcn(){
-        //console.log(12);
-            $('.thank_you').show();
-        $('#newsletter').submit();
-    }
-
-    $(document).ready(function () {
-        $('.thank_you').hide();
-        $('#zapisz_sie').click(clickfcn());
-    });
-
-    $(document).ready(function(){
-            $('#icancel').click(function(){
-                $('#formularz').hide(function(){
-                    $(this).animate({
-                    },2000)
-                });
-            });
-    });
-
-    $(document).ready(function(){
-        $('#cancel').click(function(){
-            $('.registration').hide(function(){
-                $(this).animate({
-                },2000)
-            });
-            $('#lightbox').hide(function(){
-                $(this).animate({
-                },2000)
-            });
-        });
-    });
-
-    $('.registration').hide();
-    $('#lightbox').hide();
-
-    $(document).ready(function(){
-        $('#zapisz_header').click(function(){
-            $('.registration').show(function(){
-                $(this).animate({
-                },2000)
-            });
-            $('#lightbox').show(function(){
-                $(this).animate({
-                },2000)
-            });
-        });
-    });
-
-
-</script>
 <script src="js/tomek.js"></script>
 <script src="js/kuba.js"></script>
+<script src="js/miniGame.js"></script>
+
 </body>
 </html>
